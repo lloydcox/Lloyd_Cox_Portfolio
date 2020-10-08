@@ -26,14 +26,14 @@
             </ul>
         </header>
 
-        <div class="page container">
+        <div class="page-container">
 
             <div id="about">
                 <h2>About Me</h2>
                     <p> Hi my name is Lloyd, an if you have found this website you probably know I am a Web Devloper, well training to be one at the minute That there, that's a picture of me "ICON" no Brad Pitt I know, but hey play the cards you're dealt right?</p>
                     <div class="lloydd">    
-                        <img id="me" class="lloyd" alt="lloyd" src="Imgs/lloyd.jpg">                
-                        <img id="family" class="fam" alt="family" src="Imgs/fam.jpg">
+                        <img id="me" class="lloyd" alt="lloyd" src="Imgs/lloyd.jpg">             
+                        <img id="family" class="family" alt="family" src="Imgs/fam.jpg">
                     </div>
                         <p> If you click it, you will see my familly, I love them very much, but that's not why you are here</p>
 
@@ -43,6 +43,24 @@
 
                         <div class="attributes">
                             <h3>Attributes</h3>
+                                    <input class="radio" type="radio" checked id="radio-front" name="select-face"/>    
+                                    <input class="radio" type="radio" id="radio-back" name="select-face"/>
+                                    <input class="radio" type="radio" id="radio-left" name="select-face"/>
+                                    <input class="radio" type="radio" id="radio-right" name="select-face"/>
+                                    <input class="radio" type="radio" id="radio-top" name="select-face"/>
+                                    <input class="radio" type="radio" id="radio-bottom" name="select-face"/>
+                                
+                                <div class="separator"></div>
+                                <div class="scene">
+                                    <div class="cube">
+                                        <div class="cube-face  cube-face-front"></div>
+                                        <div class="cube-face  cube-face-back"></div>
+                                        <div class="cube-face  cube-face-left"></div>
+                                        <div class="cube-face  cube-face-right"></div>
+                                        <div class="cube-face  cube-face-top"></div>
+                                        <div class="cube-face  cube-face-bottom"></div>
+                                    </div>
+                                </div>
                         </div>
 
                         <div class="expereince">
@@ -50,50 +68,87 @@
                         </div>
 
             </div>
-            <div id="projects">
+            <div id="projects" class="projects">
                 <h2>Projects</h2>
-                    <p>Here you can find a list of the projects I have worked on, hover over the image to find a short description of each project.</p>
-                        <div class="projects">
-                            <div class="wizzard">
+                    <p>Here you can find a list of the projects I have worked on, hover over the image to find a short description of each project.</p>                        
+                        <div class="container">
+                            
+                            <div class="wizzard card">
                                 <h3>Quote Wizzard/ Axure</h3>
-                                <div class=wizzard-img>
-                                    <img src="" alt="wizzard">
+                                <div class="details">
+                                    <img class="wizzard-img imagtab" src="Imgs/wizzard-start (1).png" alt="wizzard">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                            of Lorem Ipsum.
+                                        </p>
                                 </div>
                             </div>
-                            <div class="nmhp">
+                            <div class="nmhp card">
                                 <h3>NetMatters Home Page</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
+                                    <div class="details">
+                                        <img class="nmhp-img imagtab" src="Imgs/NM.png" alt="NetMatters Home Page">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                                of Lorem Ipsum.
+                                            </p>
                                     </div>
                             </div>
-                            <div class="pfp">
+                            <div class="pfp card">
                                 <h3>People for People</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
+                                    <div class="details">
+                                        <img class="pfp-img imagtab" src="Imgs/pfp.png" alt="People for People">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                                of Lorem Ipsum.
+                                            </p>
                                     </div>
                             </div>
-                            <div class="thc">
+                            <div class="thc card">
                                 <h3>The Human Codex</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
+                                    <div class="details">
+                                        <img class="thc-img imagtab" src="Imgs/thc.png" alt="The Human Codex single Page">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                                of Lorem Ipsum.
+                                            </p>
                                     </div>
                             </div>
-                            <div class="chapel">
-                                <h3>The Old Chapel</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
-                                    </div>
-                            </div>
-                            <div class="unsplash">
+                            <div class="unsplash card">
                                 <h3>Unsplash Reflection</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
+                                    <div class="details">
+                                        <img class="unsplash-img imagtab" src="Imgs/unsplash.png" alt="unsplash">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                                of Lorem Ipsum.
+                                            </p>
                                     </div>
                             </div>
-                            <div class="solar">
+                            <div class="solar card">
                                 <h3>Warren Services Solar Charging Reflection</h3>
-                                    <div class=wizzard-img>
-                                        <img src="" alt="wizzard">
+                                    <div class="details">
+                                        <img class="solar-img imagtab" src="Imgs/warren.png" alt="Solar Charging">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+                                                of Lorem Ipsum.
+                                            </p>
                                     </div>
                             </div>
                         </div>
