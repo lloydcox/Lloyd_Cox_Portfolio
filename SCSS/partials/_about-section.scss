@@ -1,0 +1,26 @@
+// about section
+
+// .about-container {
+
+// }
+
+.hide {
+    display: none;
+}
+
+.lloydd {
+    display: flex;
+    justify-content: center;    
+}
+
+.lloyd {
+    display: block;
+}
+
+.family {
+    display: none;
+}
+
+.lloyd:hover {
+    content: url('../Imgs/fam.jpg');
+}

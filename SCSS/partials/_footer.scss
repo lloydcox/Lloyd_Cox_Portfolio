@@ -1,0 +1,24 @@
+// footer section 
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.fb {
+    background-color: $color-fb;
+}
+
+.tw {
+    background-color: $color-tw;
+}
+
+.li {
+    background-color: $color-li;
+}
+
+.fbutton, .twbutton, .libutton {
+    color: $color-white;
+} 

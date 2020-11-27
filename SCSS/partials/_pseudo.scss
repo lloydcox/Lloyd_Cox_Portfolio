@@ -1,0 +1,99 @@
+
+header:hover {
+    border: $color-almond 3px solid;
+    background-color: $color-green;
+}
+
+.about-container:hover {
+    background-color: $color-almond;
+    color: $color-white;
+    border: $color-ming 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+.attributes-container:hover {
+    background-color: $color-ming;
+    color: $color-light-gray;
+    border: $color-gray 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+.skills-container:hover {
+    background-color: $color-gray;
+    color: $color-black;
+    border: $color-light-gray 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+.experience-container:hover {
+    background-color: $color-light-gray;
+    color: $color-white;
+    border: $color-green 3px solid;
+    h2 {
+        color: $color-white;
+    }     h3 {
+        color: $color-white;
+    }
+}
+
+.hobbies-container:hover {
+    background-color: $color-green;
+    color: $color-black;
+    border: $color-almond 3px solid;
+    h2 {
+        color: $color-black;
+    }     h3 {
+        color: $color-black;
+    }
+}
+
+.interests-container:hover {
+    background-color: $color-almond;
+    color: $color-white;
+    border: $color-ming 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+.goals-container:hover {
+    background-color: $color-ming;
+    color: $color-black;
+    border: $color-gray 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+.projects-container:hover {
+    background-color: $color-gray;
+    color: $color-black;
+    border: $color-light-gray 3px solid;
+    h2 {
+        color: $color-black;
+    }
+}
+
+footer:hover {
+    background-color: $color-light-gray;
+    color: $color-white;
+    border: $color-green 3px solid;
+    h2 {
+        color: $color-white;
+    }     h3 {
+        color: $color-white;
+    }
+}
+
+
+header, .about-container, .attributes-container, .skills-container,
+.experience-container, .hobbies-container, .interests-container:hover,
+.goals-container, .projects-container, footer {
+    width: 100%;
+}
