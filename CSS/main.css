@@ -21,10 +21,6 @@ body {
 }
 
 /* HEADINGS DEFAULT */
-h1, h2, h3, h4, h5, h6 {
-  color: #444;
-}
-
 a {
   text-decoration: none;
 }
@@ -164,7 +160,7 @@ form input:focus {
 .categories,
 li {
   font-family: Raleway, sans-serif;
-  background-color: #282155;
+  background-color: #326771;
   border-radius: 300px;
 }
 
@@ -359,47 +355,11 @@ li.label4 {
   }
 }
 
-.page-container {
+.p-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-h1, h2, h3, p {
-  text-align: center;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
-  width: 90%;
-}
-
-.details {
-  position: relative;
-  width: 75%;
-  height: 300px;
-  overflow: hidden;
-  border: 1px solid red;
-  background-color: transparent;
-}
-
-.details .imagtab {
-  width: 100%;
-  height: auto;
-  transform: translateY(0px);
-}
-
-.details:hover .imagtab {
-  transform: translateY(calc(-100% + 300px));
+  flex-direction: column;
 }
 
 .projects {
@@ -410,10 +370,10 @@ img {
 }
 
 .card {
-  border: 3px solid grey;
+  border: 5px solid #F1DAC4;
   margin: 10px;
   width: 100%;
-  height: 400px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -426,7 +386,6 @@ img {
 .unsplash-img, .solar-img, .pfp-img, .nmhp-img,
 .thc-img, .wizzard-img {
   width: 100%;
-  height: 50%;
 }
 
 header {
@@ -463,7 +422,7 @@ ul li {
 .categories,
 li {
   font-family: Raleway, sans-serif;
-  background-color: #282155;
+  background-color: #326771;
   border-radius: 300px;
 }
 
@@ -681,111 +640,178 @@ li.label4 {
   color: #ffffff;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.details .imagtab {
+  width: 100%;
+  height: auto;
+  transform: translateY(0px);
+}
+
+.details:hover .imagtab {
+  transform: translateY(calc(-100% + 300px));
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  .p-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
 header:hover {
   border: #F1DAC4 3px solid;
-  background-color: #59C9A5;
+  background-color: #326771;
+  color: #F1DAC4;
+}
+
+header:hover h1 {
+  color: #F1DAC4;
 }
 
 .about-container:hover {
   background-color: #F1DAC4;
-  color: #ffffff;
+  color: #326771;
   border: #326771 3px solid;
 }
 
 .about-container:hover h2 {
-  color: #363636;
+  color: #326771;
 }
 
 .attributes-container:hover {
   background-color: #326771;
-  color: #A69CAC;
-  border: #28464B 3px solid;
-}
-
-.attributes-container:hover h2 {
-  color: #363636;
-}
-
-.skills-container:hover {
-  background-color: #28464B;
-  color: #363636;
-  border: #A69CAC 3px solid;
-}
-
-.skills-container:hover h2 {
-  color: #363636;
-}
-
-.experience-container:hover {
-  background-color: #A69CAC;
-  color: #ffffff;
-  border: #59C9A5 3px solid;
-}
-
-.experience-container:hover h2 {
-  color: #ffffff;
-}
-
-.experience-container:hover h3 {
-  color: #ffffff;
-}
-
-.hobbies-container:hover {
-  background-color: #59C9A5;
-  color: #363636;
+  color: #F1DAC4;
   border: #F1DAC4 3px solid;
 }
 
-.hobbies-container:hover h2 {
-  color: #363636;
+.attributes-container:hover h2 {
+  color: #F1DAC4;
 }
 
-.hobbies-container:hover h3 {
-  color: #363636;
-}
-
-.interests-container:hover {
+.skills-container:hover {
   background-color: #F1DAC4;
-  color: #ffffff;
+  color: #326771;
   border: #326771 3px solid;
 }
 
+.skills-container:hover h2 {
+  color: #326771;
+}
+
+.experience-container:hover {
+  background-color: #326771;
+  color: #F1DAC4;
+  border: #F1DAC4 3px solid;
+}
+
+.experience-container:hover h2 {
+  color: #F1DAC4;
+}
+
+.experience-container:hover h3 {
+  color: #F1DAC4;
+}
+
+.hobbies-container:hover {
+  background-color: #F1DAC4;
+  color: #326771;
+  border: #326771 3px solid;
+}
+
+.hobbies-container:hover h2 {
+  color: #326771;
+}
+
+.hobbies-container:hover h3 {
+  color: #326771;
+}
+
+.interests-container:hover {
+  background-color: #326771;
+  color: #F1DAC4;
+  border: #F1DAC4 3px solid;
+}
+
 .interests-container:hover h2 {
-  color: #363636;
+  color: #F1DAC4;
 }
 
 .goals-container:hover {
-  background-color: #326771;
-  color: #363636;
-  border: #28464B 3px solid;
+  background-color: #F1DAC4;
+  color: #326771;
+  border: #326771 3px solid;
 }
 
 .goals-container:hover h2 {
-  color: #363636;
+  color: #326771;
 }
 
 .projects-container:hover {
-  background-color: #28464B;
-  color: #363636;
-  border: #A69CAC 3px solid;
+  background-color: #326771;
+  color: #F1DAC4;
+  border: #F1DAC4 3px solid;
 }
 
 .projects-container:hover h2 {
-  color: #363636;
+  color: #F1DAC4;
+}
+
+.projects-container:hover h2 h3 {
+  color: #F1DAC4;
+}
+
+.projects-container:hover h2 h3 p {
+  color: #F1DAC4;
 }
 
 footer:hover {
-  background-color: #A69CAC;
-  color: #ffffff;
-  border: #59C9A5 3px solid;
+  background-color: #F1DAC4;
+  color: #326771;
+  border: #326771 3px solid;
 }
 
 footer:hover h2 {
-  color: #ffffff;
+  color: #326771;
 }
 
 footer:hover h3 {
-  color: #ffffff;
+  color: #326771;
 }
 
 header, .about-container, .attributes-container, .skills-container,

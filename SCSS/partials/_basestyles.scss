@@ -13,7 +13,7 @@ h1, h2, h3, p {
 }
 
 img {
-    width: 100%;
+    width: 300px;
     height: auto;
 }
 
@@ -22,8 +22,6 @@ img {
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  width: 90%;
-  // border: 3px solid $color-red;
 }
 
 
@@ -31,10 +29,8 @@ img {
 
 .details {
     position: relative;
-    width: 75%;
-    height: 300px;
+    width: 100%;
     overflow: hidden;
-    border: 1px solid red;
     background-color: transparent;
   }
   
@@ -46,6 +42,6 @@ img {
   
   .details:hover .imagtab {
     transform: translateY(calc(-100% + 300px)); 
-    // transform: scale(1.5);
+    transform: scale(1.15);
   }
 

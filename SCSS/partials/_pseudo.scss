@@ -1,93 +1,103 @@
 
 header:hover {
     border: $color-almond 3px solid;
-    background-color: $color-green;
+    background-color: $color-ming;
+    color: $color-almond;
+    h1 {
+        color: $color-almond;
+    }
 }
 
 .about-container:hover {
     background-color: $color-almond;
-    color: $color-white;
+    color: $color-ming;
     border: $color-ming 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-ming;
     }
 }
 
 .attributes-container:hover {
     background-color: $color-ming;
-    color: $color-light-gray;
-    border: $color-gray 3px solid;
+    color: $color-almond;
+    border: $color-almond 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-almond;
     }
 }
 
 .skills-container:hover {
-    background-color: $color-gray;
-    color: $color-black;
-    border: $color-light-gray 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-ming;
     }
 }
 
 .experience-container:hover {
-    background-color: $color-light-gray;
-    color: $color-white;
-    border: $color-green 3px solid;
+    background-color: $color-ming;
+    color: $color-almond;
+    border: $color-almond 3px solid;
     h2 {
-        color: $color-white;
+        color: $color-almond;
     }     h3 {
-        color: $color-white;
+        color: $color-almond;
     }
 }
 
 .hobbies-container:hover {
-    background-color: $color-green;
-    color: $color-black;
-    border: $color-almond 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-ming;
     }     h3 {
-        color: $color-black;
+        color: $color-ming;
     }
 }
 
 .interests-container:hover {
-    background-color: $color-almond;
-    color: $color-white;
-    border: $color-ming 3px solid;
+    background-color: $color-ming;
+    color: $color-almond;
+    border: $color-almond 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-almond;
     }
 }
 
 .goals-container:hover {
-    background-color: $color-ming;
-    color: $color-black;
-    border: $color-gray 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-ming;
     }
 }
 
 .projects-container:hover {
-    background-color: $color-gray;
-    color: $color-black;
-    border: $color-light-gray 3px solid;
+    background-color: $color-ming;
+    color: $color-almond;
+    border: $color-almond 3px solid;
     h2 {
-        color: $color-black;
+        color: $color-almond;
+        h3 {
+            color: $color-almond;
+            p {
+                color: $color-almond;
+            }
+        }
     }
 }
 
 footer:hover {
-    background-color: $color-light-gray;
-    color: $color-white;
-    border: $color-green 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-white;
+        color: $color-ming;
     }     h3 {
-        color: $color-white;
+        color: $color-ming;
     }
 }
 

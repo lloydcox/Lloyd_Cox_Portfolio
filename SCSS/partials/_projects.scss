@@ -1,5 +1,13 @@
 // Project section 
 
+.p-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
 .projects {
 	display: flex;
     flex-direction: column;
@@ -8,10 +16,10 @@
 }
 
 .card {
-    border: 3px solid grey;
+    border: 5px solid $color-almond;
     margin: 10px;
     width: 100%;
-    height: 400px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -24,7 +32,6 @@
 .unsplash-img, .solar-img, .pfp-img, .nmhp-img,
 .thc-img, .wizzard-img {
     width: 100%;
-    height: 50%;
 }
 
 // // Cube 
