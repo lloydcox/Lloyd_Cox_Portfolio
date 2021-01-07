@@ -5,11 +5,15 @@
 }
 
 @media screen and (min-width: 768px) {
-
+    .attributes-headings {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 990px) {
-    
+    .attributes-headings {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
