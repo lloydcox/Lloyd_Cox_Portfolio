@@ -1,10 +1,10 @@
 
 header:hover {
-    border: $color-almond 3px solid;
-    background-color: $color-ming;
-    color: $color-almond;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h1 {
-        color: $color-almond;
+        color: $color-ming;
     }
 }
 
@@ -18,11 +18,11 @@ header:hover {
 }
 
 .attributes-container:hover {
-    background-color: $color-ming;
-    color: $color-almond;
-    border: $color-almond 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-almond;
+        color: $color-ming;
     }
 }
 
@@ -36,13 +36,11 @@ header:hover {
 }
 
 .experience-container:hover {
-    background-color: $color-ming;
-    color: $color-almond;
-    border: $color-almond 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-almond;
-    }     h3 {
-        color: $color-almond;
+        color: $color-ming;
     }
 }
 
@@ -58,11 +56,11 @@ header:hover {
 }
 
 .interests-container:hover {
-    background-color: $color-ming;
-    color: $color-almond;
-    border: $color-almond 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-almond;
+        color: $color-ming;
     }
 }
 
@@ -76,15 +74,15 @@ header:hover {
 }
 
 .projects-container:hover {
-    background-color: $color-ming;
-    color: $color-almond;
-    border: $color-almond 3px solid;
+    background-color: $color-almond;
+    color: $color-ming;
+    border: $color-ming 3px solid;
     h2 {
-        color: $color-almond;
+        color: $color-ming;
         h3 {
-            color: $color-almond;
+            color: $color-ming;
             p {
-                color: $color-almond;
+                color: $color-ming;
             }
         }
     }
@@ -102,8 +100,8 @@ footer:hover {
 }
 
 
-header, .about-container, .attributes-container, .skills-container,
-.experience-container, .hobbies-container, .interests-container:hover,
-.goals-container, .projects-container, footer {
-    width: 100%;
-}
+// header, .about-container, .attributes-container, .skills-container,
+// .experience-container, .hobbies-container, .interests-container:hover,
+// .goals-container, .projects-container, footer {
+
+// }

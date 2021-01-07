@@ -5,17 +5,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .p-container {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
-    .card {
-        width: 45%;
-    }
 }
 
 @media screen and (min-width: 990px) {
