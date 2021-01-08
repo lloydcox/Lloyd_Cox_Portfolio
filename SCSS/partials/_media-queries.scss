@@ -8,14 +8,23 @@
     .attributes-headings {
         width: 40%;
     }
+
+    .card {
+        height: 500px;
+    }
 }
 
 @media screen and (min-width: 990px) {
     .attributes-headings {
         width: 30%;
     }
+    .card {
+        height: 600px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .card {
+        height: 600px;
+    }
 }

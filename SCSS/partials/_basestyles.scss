@@ -1,6 +1,9 @@
 
 // Base Styles 
 
+body {
+  background-color: $color-alice;
+}
 .page-container {
   display: flex;
   flex-direction: column;

@@ -169,12 +169,16 @@ form input:focus {
 }
 
 .card {
-  border: 5px solid #326771;
+  border: 5px solid #4EA699;
   margin: 10px;
   width: 90%;
-  height: auto;
-  overflow: hidden;
+  height: 400px;
+  overflow-x: scroll;
   border-radius: 5px;
+}
+
+.card h3, .card h5 {
+  margin: 10px 0;
 }
 
 .details {
@@ -183,10 +187,30 @@ form input:focus {
   overflow: hidden;
 }
 
+.section-text {
+  width: 75%;
+  margin: auto;
+}
+
+.project-text {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.show {
+  margin: 10px 0px;
+}
+
 .unsplash-img, .solar-img, .pfp-img, .nmhp-img,
 .thc-img, .wizzard-img {
   width: 100%;
-  height: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hide, .hide-vid {
+  display: none;
 }
 
 header {
@@ -208,7 +232,7 @@ header {
 
 .attributes-headings {
   margin: 10px;
-  border: 3px #363636 solid;
+  border: 3px #232528 solid;
   border-radius: 5px;
 }
 
@@ -240,6 +264,10 @@ header {
 
 .fbutton, .twbutton, .libutton {
   color: #ffffff;
+}
+
+body {
+  background-color: #EAF6FF;
 }
 
 .page-container {
@@ -297,126 +325,137 @@ img {
   .attributes-headings {
     width: 40%;
   }
+  .card {
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 990px) {
   .attributes-headings {
     width: 30%;
   }
+  .card {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    height: 600px;
+  }
 }
 
 header:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  color: #232528;
+  border: #4EA699 3px solid;
 }
 
 header:hover h1 {
-  color: #326771;
+  color: #232528;
 }
 
 .about-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .about-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .attributes-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .attributes-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .skills-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .skills-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .experience-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .experience-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .hobbies-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .hobbies-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .hobbies-container:hover h3 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .interests-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .interests-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .goals-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .goals-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .projects-container:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 .projects-container:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .projects-container:hover h2 h3 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 .projects-container:hover h2 h3 p {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 footer:hover {
-  background-color: #F1DAC4;
-  color: #326771;
-  border: #326771 3px solid;
+  background-color: #4EA699;
+  color: #EAF6FF;
+  border: #4EA699 3px solid;
 }
 
 footer:hover h2 {
-  color: #326771;
+  color: #EAF6FF;
 }
 
 footer:hover h3 {
-  color: #326771;
+  color: #EAF6FF;
 }

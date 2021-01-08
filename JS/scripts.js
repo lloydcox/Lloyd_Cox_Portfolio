@@ -3,24 +3,37 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-$(".imagtab").css("transition", "transform " + 1.2 * $(".imagtab").height() + "s ease");
+// $(".imagtab").css("transition", "transform " + 1.2 * $(".imagtab").height() + "s ease");
 
 $('h1, h2, h3').click(function() {
 	$(this).next('.section-text').toggle("hide");
 });
 
+
+$('.show').click(function() {
+    $('.video').toggle("hide");
+    $('.project-text').toggle("hide");
+    $('.show').toggleClass('hide');
+});
+
+$('.projects-t').click(function() {
+    $('.p-container').toggle("hide");
+});
+
 $('.p-container').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    arrows: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -28,8 +41,8 @@ $('.p-container').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
