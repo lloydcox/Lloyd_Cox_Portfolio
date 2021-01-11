@@ -134,25 +134,21 @@ form input:focus {
   padding: 20px 0px;
 }
 
-.hide {
-  display: none;
+.about-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .lloydd {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .lloyd {
   display: block;
-}
-
-.family {
-  display: none;
-}
-
-.lloyd:hover {
-  content: url("../Imgs/fam.jpg");
 }
 
 .p-container {
@@ -187,11 +183,6 @@ form input:focus {
   overflow: hidden;
 }
 
-.section-text {
-  width: 75%;
-  margin: auto;
-}
-
 .project-text {
   text-align: center;
   width: 90%;
@@ -207,10 +198,6 @@ form input:focus {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-.hide, .hide-vid {
-  display: none;
 }
 
 header {
@@ -232,7 +219,6 @@ header {
 
 .attributes-headings {
   margin: 10px;
-  border: 3px #232528 solid;
   border-radius: 5px;
 }
 
@@ -303,6 +289,15 @@ img {
   width: 75%;
 }
 
+.section-text {
+  width: 100%;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
 .details {
   position: relative;
   width: 100%;
@@ -319,6 +314,42 @@ img {
 .details:hover .imagtab {
   transform: translateY(calc(-100% + 300px));
   transform: scale(1.15);
+}
+
+.experience {
+  width: 100%;
+}
+
+.exp-title {
+  margin: 10px;
+}
+
+.exp-text {
+  margin: 10px;
+}
+
+.stack-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.stack-headings {
+  width: 25%;
+  margin: 10px;
+}
+
+.hobbies-text p {
+  margin: 10px;
+}
+
+.hobbie {
+  margin: 20px;
+}
+
+.hobbie h3 {
+  margin: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -345,12 +376,12 @@ img {
   }
 }
 
-header:hover {
+.title-container:hover {
   color: #232528;
   border: #4EA699 3px solid;
 }
 
-header:hover h1 {
+.title-container:hover h1 {
   color: #232528;
 }
 

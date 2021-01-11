@@ -5,8 +5,12 @@ $( document ).ready(function() {
 
 // $(".imagtab").css("transition", "transform " + 1.2 * $(".imagtab").height() + "s ease");
 
-$('h1, h2, h3').click(function() {
+$('h1, h2').click(function() {
 	$(this).next('.section-text').toggle("hide");
+});
+
+$('.title').click(function() {
+	$(this).next('.text').toggle("hide");
 });
 
 

@@ -1,21 +1,19 @@
 
-.hide {
-    display: none;
-}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
 .lloydd {
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    margin: 10px;   
 }
 
 .lloyd {
     display: block;
 }
 
-.family {
-    display: none;
-}
 
-.lloyd:hover {
-    content: url('../Imgs/fam.jpg');
-}
