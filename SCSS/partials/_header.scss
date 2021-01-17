@@ -5,10 +5,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 175px;
 }
 
 .title-container {
     display: flex;
     flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    height: 100%;
 }
 

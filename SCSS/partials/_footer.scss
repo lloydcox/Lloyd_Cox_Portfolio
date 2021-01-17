@@ -1,5 +1,10 @@
 // footer section 
 
+.footer-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
 .contact {
     display: flex;
     flex-direction: column;
@@ -7,16 +12,43 @@
     text-align: center;
 }
 
+.contact-b {
+    font-size: 1.25em;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 100%;
+    height: 75px;
+}
+
 .fb {
     background-color: $color-fb;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .tw {
     background-color: $color-tw;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .li {
     background-color: $color-li;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .fbutton, .twbutton, .libutton {

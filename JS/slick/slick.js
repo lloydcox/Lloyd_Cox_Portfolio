@@ -680,6 +680,7 @@
 
     };
 
+    
     Slick.prototype.changeSlide = function(event, dontAnimate) {
 
         var _ = this,

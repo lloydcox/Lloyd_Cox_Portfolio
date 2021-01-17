@@ -1,66 +1,101 @@
-//Scripts
+// Scripts
 
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+  // Close/expand sections when clicked
+  $('.title-container, .inner-container ').click( function (event) {
+    event.stopPropagation();
+    if (!($(this).find('.section-text').is('.active')) && ($('.section-text').is('.active'))) {               
+        if ($('.text').is('.open')) {
+          $('div.text.open').toggleClass('hide open');
+          $('div.headings.active').toggleClass('active');
+          $('div.section-text.active').toggleClass('hide active');
+          $('div.inner-container.active').toggleClass('active');
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active');  
+      } else {
+          $('div.section-text.active').toggleClass('hide active');
+          $('div.inner-container.active').toggleClass('active');
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active'); 
+      }  
+    }
+    //  have to add else if including the headings not put the condtionals in the 4 else if already. 
+    else if ($(this).find('.section-text').is('.active'))  {
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active');
+        
+    }
 
-// $(".imagtab").css("transition", "transform " + 1.2 * $(".imagtab").height() + "s ease");
-
-$('h1, h2').click(function() {
-	$(this).next('.section-text').toggle("hide");
-});
-
-$('.title').click(function() {
-	$(this).next('.text').toggle("hide");
-});
-
-
-$('.show').click(function() {
-    $('.video').toggle("hide");
-    $('.project-text').toggle("hide");
-    $('.show').toggleClass('hide');
-});
-
-$('.projects-t').click(function() {
-    $('.p-container').toggle("hide");
-});
-
-$('.p-container').slick({
-    arrows: true,
-    autoplay: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-});
-
+    else if ($('.section-text').is('.active')) {
+        if ($('.text').is('.open')) {
+          $('.text').toggleClass('hide open');
+          $('div.section-text.active').toggleClass('hide active');
+          $('div.inner-container.active').toggleClass('active');
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active');  
+      } else {
+          $('div.section-text.active').toggleClass('hide active');
+          $('div.inner-container.active').toggleClass('active');
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active'); 
+      } 
+    } 
+    else if (!($(this).find('.section-text').is('.active')))  {
+          $(this).find('.section-text').toggleClass('hide active');
+          $(this).closest('.inner-container').toggleClass('active'); 
+    } 
 })
+
+  $('.headings').click(function (event) {
+    event.stopPropagation();
+    if (!($(this).is('.active')) && ($('.headings').is('.active')) )  {
+      $('div.headings.active').toggleClass('active');
+      $('div.text.open').toggleClass('hide open');      
+      $(this).toggleClass('active');
+      $(this).find('.text').toggleClass('hide open'); 
+    }
+
+    else if ($(this).is('.active'))  {
+      $(this).toggleClass('active');
+      $(this).find('.text').toggleClass('hide open');
+    }
+
+    else if ($('.headings').is('.active')) {
+      $('div.headings.active').toggleClass('active');
+      $('div.text.open').toggleClass('hide open');
+      $(this).toggleClass('active');
+      $(this).find('.text').toggleClass('hide open');  
+    } 
+
+    else if (!($(this).is('.active')))  {
+      $(this).toggleClass('active');
+      $(this).find('.text').toggleClass('hide open'); 
+    } 
+  });
+
+  // show details or video when clicking button in carousel
+  $('.show').click(function (event) {
+    event.stopPropagation();
+    $('.you-t').toggle('hide')
+    $('.project-text').toggle('hide')
+    $('.show').toggleClass('hide')
+  })
+  // show hide carousel when title clicked
+  // $('.projects-t').click(function () {
+  //   $('.p-container').toggle('hide')
+  // })
+
+  // carousel settings
+  $('.main-slider').slick({
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnFocus: true
+  })
+})
+
+  
 

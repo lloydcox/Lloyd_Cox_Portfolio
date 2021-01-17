@@ -1,30 +1,148 @@
 // Media Queries 
 
 @media screen and (min-width: 480px) {
+    h1 {
+        font-size: 2.75em;
+      }
+      
+    h2 {
+        font-size: 2.25em;
+    }
     
+    h3 {
+        font-size: 1.75em;
+    }
+    
+    p {
+        font-size: 1.125em;
+    }
+    
+    .contact-b {
+        font-size: 1.125em;
+    }
+
+    .active {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .attributes-headings {
-        width: 40%;
+    h1 {
+        font-size: 3em;
+      }
+      
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.25em;
+    }
+    
+    .contact-b {
+        font-size: 1.25em;
+    }
+
+    .section, .ab-text {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .headings, .headings-1 {
+        width: 45%;
     }
 
     .card {
         height: 500px;
     }
+    .img-cont {
+        height: 300px;
+    }
+
+    .ab-text {
+        flex-direction: row;
+    }
+
+    .active {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 990px) {
-    .attributes-headings {
-        width: 30%;
+    h1 {
+        font-size: 3.25em;
+      }
+      
+    h2 {
+        font-size: 2.75em;
     }
+    
+    h3 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1.5em;
+    }
+    
+    .contact-b {
+        font-size: 2em;
+    }
+
+    .a-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .inner-container {
+        width: 45%;
+    }
+
+    .goals {
+        justify-content: space-around;
+    }
+
+
     .card {
         height: 600px;
+    }
+
+    .active {
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 3.5em;
+      }
+      
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 2.75em;
+    }
+    
+    p {
+        font-size: 1.75em;
+    }
+    
+    .contact-b {
+        font-size: 2.25em;
+    }
+
     .card {
         height: 600px;
+    }
+
+    .active {
+        width: 90%;
     }
 }
