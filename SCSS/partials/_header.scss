@@ -5,14 +5,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 175px;
+    z-index: 10;
+    width: 100%;
 }
 
 .title-container {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 85%;
     justify-content: center;
     height: 100%;
+}
+
+.header-text {
+    display: none;
 }
 

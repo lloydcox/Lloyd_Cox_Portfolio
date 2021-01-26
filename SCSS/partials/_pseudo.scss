@@ -1,107 +1,755 @@
 
-.title-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h1 {
-        color: $color-white;
-    }
-}
-
-.about-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.attributes-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.stack-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.experience-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.hobbies-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-}       h3 {
-            color: $color-white;
-    }
-}
-
-.interests-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.goals-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-    }
-}
-
-.projects-container:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-        h3 {
-            color: $color-white;
-            p {
-                color: $color-white;
-            }
-        }
-    }
-}
-
-footer:hover {
-    background-color: $color-pine;
-    color: $color-white;
-    border: $color-pine 3px solid;
-    h2 {
-        color: $color-white;
-}       h3 {
-            color: $color-white;
-    }
-}
-
-
-// header, .about-container, .attributes-container, .skills-container,
-// .experience-container, .hobbies-container, .interests-container:hover,
-// .goals-container, .projects-container, footer {
-
+// .title-container:hover {
+//     border: $color-white 3px solid;
 // }
+
+
+// .footer-container:hover {
+//     border: $color-white 3px solid;
+// }
+
+.yellow-blue:hover {
+    background-color: $color-yellow;
+    color: $color-dark-blue;
+    border: $color-dark-blue 3px solid;
+}
+
+.blue-yellow:hover {
+    background-color: $color-dark-blue;
+    color: $color-yellow;
+    border: $color-yellow 3px solid;
+}
+
+.fb:hover, .tw:hover, .li:hover {
+    border: $color-dark-blue 3px solid;
+}
+
+.contact-b:hover, .show:hover {
+    // color: $color-dark-blue;
+    border: $color-dark-blue 3px solid;}
+
+.card:hover {
+    border: $color-dark-blue 3px solid;
+}
+
+
+// flip cards 
+
+.flip-card {
+    background-color: transparent;
+    height: 200px;
+    width: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-1s {
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-1 {
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+    .flip-card-2 {
+    background-color: transparent;
+    height: 600px;
+    width: 600px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-v {
+    background-color: transparent;
+    height: 120px;
+    width: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-3 {
+    background-color: transparent;
+    height: 600px;
+    width: 600px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+  .flip-card-e {
+    height: 320px;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-4 {
+    background-color: transparent;
+    height: 550px;
+    width: 550px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+  .flip-card-m {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-5 {
+    background-color: transparent;
+    height: 700px;
+    width: 700px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-6 {
+    background-color: transparent;
+    height: 700px;
+    width: 1915px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+    overflow: visible;
+  }
+  .flip-card-s {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-7 {
+    background-color: transparent;
+    height: 1000px;
+    width: 1050px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+    overflow: visible;
+  }
+  .flip-card-u {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-8 {
+    background-color: transparent;
+    height: 650px;
+    width: 1290px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+    overflow: visible;
+  }
+  .flip-card-n {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+  }
+
+  .flip-card-9 {
+    background-color: transparent;
+    height: 400px;
+    width: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    z-index: 100;
+    overflow: visible;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner, .flip-card-inner-1, .flip-card-inner-1s, 
+  .flip-card-inner-2, .flip-card-inner-v, 
+  .flip-card-inner-3, .flip-card-inner-e,
+  .flip-card-inner-4, .flip-card-inner-m,
+  .flip-card-inner-5,
+  .flip-card-inner-6, .flip-card-inner-s,
+  .flip-card-inner-7, .flip-card-inner-u,
+  .flip-card-inner-8, .flip-card-inner-n,
+  .flip-card-inner-9 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+   .flip-card-1s:hover .flip-card-inner-1s {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-1:hover .flip-card-inner-1 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-2:hover .flip-card-inner-2 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-v:hover .flip-card-inner-v {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-3:hover .flip-card-inner-3 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-e:hover .flip-card-inner-e {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-4:hover .flip-card-inner-4 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-m:hover .flip-card-inner-m {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-5:hover .flip-card-inner-5 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-6:hover .flip-card-inner-6 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-s:hover .flip-card-inner-s {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-7:hover .flip-card-inner-7 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-u:hover .flip-card-inner-u {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-8:hover .flip-card-inner-8 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-n:hover .flip-card-inner-n {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-9:hover .flip-card-inner-9 {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;   
+    border-radius: 25px; 
+  }
+
+  .flip-card-front-1s, .flip-card-back-1s {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .flip-card-front-1, .flip-card-back-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/mercury.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    border-radius: 50%;
+  }
+
+  .flip-card-front-2, .flip-card-back-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/venus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    border-radius: 50%;
+  }
+
+  .flip-card-front-v, .flip-card-back-v {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;    
+    border-radius:  25px;
+  }
+
+  .flip-card-front-3, .flip-card-back-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/earth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    border-radius: 50%;
+  }
+
+  .flip-card-front-e, .flip-card-back-e {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    border-radius:  25px;
+  }
+
+  .flip-card-front-4, .flip-card-back-4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/mars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    border-radius: 50%;
+  }
+
+  .flip-card-front-m, .flip-card-back-m {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    border-radius:  25px;
+  }
+
+  .ring {
+    width: 150%;
+    height: 150%;
+    border: solid 10px red;
+    border-radius: 50%;
+    top: -25%; 
+    left: -25%; 
+    position: absolute;
+    transform: rotate3d(0.8, 0.2, 0, 75deg); 
+    box-sizing: border-box;
+  }
+
+  .flip-card-front-5, .flip-card-back-5 {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/jupiter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1027px;
+    border-radius: 50%;
+  }
+
+
+  .flip-card-front-6, .flip-card-back-6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/saturn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1755px;
+    border-radius: 50%;
+    overflow: visible;
+  }
+
+  .flip-card-front-s, .flip-card-back-s {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    border-radius:  25px;
+  }
+
+  .flip-card-front-7, .flip-card-back-7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/uranus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1310px;
+    border-radius: 50%;
+    overflow: visible;
+  }
+
+  .flip-card-front-u, .flip-card-back-u {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    border-radius:  25px;
+  }
+
+  .flip-card-front-8, .flip-card-back-8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/neptune.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1310px;
+    border-radius: 50%;
+    overflow: visible;
+  }
+
+  .flip-card-front-n, .flip-card-back-n {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    border-radius:  25px;
+  }
+
+  .flip-card-front-9, .flip-card-back-9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../Imgs/pluto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    border-radius: 50%;
+    overflow: visible;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    border: $color-white 3px solid;
+  }
+
+  .flip-card-front-v {
+    h3 {
+      font-size: 1.125em;
+    }
+  }
+
+  .flip-card-front-e {
+    h3 {
+      font-size: 1.125em;
+    }
+  }
+
+  .flip-card-front-m {
+    h3 {
+      font-size: 1.125em;
+    }
+  }
+
+  .flip-card-front-s {
+    h3 {
+      font-size: 1.125em;
+    }
+  }
+
+  .flip-card-front-u {
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+
+  .flip-card-front-n {
+    h3 {
+      font-size: 1.125em;
+    }
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    justify-content: center;
+    p {
+      width: 65%;
+    }
+  }
+
+  .flip-card-back-1s {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-1 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-2 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-v {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-3 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-e {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-4 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-m {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-5 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-6 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-s {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-7 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-u {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-8 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back-n {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+    p {
+        // margin-top: 20px;
+        margin: auto;
+        width: 75%;
+    }
+  }
+
+  .flip-card-back-9 {
+    transform: rotateY(180deg);
+  }
+
+  .exp-flip {
+    height: 300px;
+}
+
+  // side scroll 
+
+  .slide {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 900vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    top: 0;
+  }
+  ::-webkit-scrollbar {
+    display:none;
+  }
+
+
+  // colour classes 
+
+.green-purp1 {
+    background-color: $color-green;
+    color: $color-purple;
+    border: $color-purple 3px solid;
+}
+.purp-green1 {
+    background-color: $color-purple;
+    color: $color-green;
+    border: $color-green 3px solid;
+}
+
+.red-white1{
+    background-color: $color-red;
+    color: $color-white;
+    border: $color-white 3px solid;
+}
+
+.white-red1 {
+    background-color: $color-white;
+    color: $color-red;
+    border: $color-red 3px solid;
+}
+
+.yellow-blue1 {
+    background-color: $color-yellow;
+    color: $color-dark-blue;
+    border: $color-dark-blue 3px solid;
+}
+
+.blue-yellow1 {
+    background-color: $color-dark-blue;
+    color: $color-yellow;
+    border: $color-yellow 3px solid;
+}
+
+.gray-white {
+  background-color: $color-gray;
+  color: $color-white;
+  border: $color-white 3px solid;
+}
+
+.white-gray {
+  background-color: $color-white;
+  color: $color-gray;
+  border: $color-gray 3px solid;
+}
+
