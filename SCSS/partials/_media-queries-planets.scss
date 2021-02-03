@@ -1,0 +1,352 @@
+
+@media screen and (min-width: 990px) {
+
+    // large screen
+
+    .large-screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 3;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .design {
+        display: block;
+        padding: 10px;
+        font-size: 1.25em;
+        margin: 10px;
+      }
+
+    .header-text {
+        display: flex;
+    }
+
+
+    .contact-bs {
+        font-size: 2em;
+    }
+    
+    .a-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .planet-title {
+        font-size: 2em;
+    }
+
+    .content {
+        justify-content: space-around;
+    }
+
+    .section-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abouttt-s {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 80%;
+    }
+
+    .head-s {
+        width: 55%;
+    }
+
+    .introduction-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .introduction-text:-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    
+    .about-title-s {
+        width: 100%;
+        height: 75px;
+        font-size: 2em;
+        color: $color-white;
+    }
+
+    .attributes-s {
+        align-items: center;
+        height: 71%;
+        margin-top: -17px;
+        width: 90%;
+    }
+
+    .attr-title {
+        width: 100%;
+        height: 15%;
+        font-size: 2em;
+        color: $color-gray;
+        position: absolute;
+        top: 20px;
+    }
+
+    .attributes-headings-s {
+        width: 23%;
+    }
+
+    .exp-title {
+        width: 100%;
+        height: 15%;
+        font-size: 2em;
+        color: $color-white;
+        position: absolute;
+        top: 20px;
+    }
+
+    .experience-s {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        height: 55%;
+        display: flex;
+        width: 100%;
+    }
+
+    .thc-heading-s, .foll-s {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .hob-title {
+        width: 100%;
+        height: 15%;
+        font-size: 2em;
+        color: $color-gray;
+        position: absolute;
+        top: 20px;
+    }
+
+    .hobbies-s {
+        width: 86%;
+        height: 60%;
+    }
+
+    .hobbie-s {
+        width: 29%;
+        height: 45%;
+    }
+
+    .proj-title {
+        width: 100%;
+        height: 15%;
+        font-size: 2em;
+        color: $color-white;
+        position: absolute;
+        top: 20px;
+    }
+
+    .projects-s {
+        border: none;
+    }
+
+    .proj-intro-s {
+        width: 100%;
+        p {
+            font-size: 1.125em;
+            margin-top: 5px;
+        }
+    }
+    
+    .proj-details-s {
+    width: 73%;
+    height: 70%;
+    overflow-y: scroll;
+    }
+
+    .card-s {
+    height: 400px;
+    overflow-y: scroll;
+    }
+
+    .video-height-s {
+        justify-content: flex-start;
+    }
+    
+    .show-s {
+        background-color: $color-gray;
+        color: $color-white;
+        margin-bottom: 5px;
+    }
+
+    .you-t-s {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slick-dots {
+        bottom: -18px;
+        z-index: 4;
+    }
+
+    .stack-title {
+        width: 100%;
+        font-size: 2em;
+        color: $color-gray;
+        height: 15%;
+        margin-top: -130px;
+    }
+
+    .stack-s {
+        width: 570px;
+        height: 60%;
+        margin-right: 30px;
+        margin-top: -20px;
+    }
+
+    .stack-headings-s {
+        height: 30%;
+        width: 27%;
+    }
+
+    .int-title {
+        margin-top: 100px;
+        margin-right: 55px;
+        font-size: 2em;
+        color: $color-white;
+        top: 30;
+    }
+
+    .interests-section-s {
+        width: 625px;
+        height: 625px;
+    }
+
+    .interests-s {
+        width: 86%;
+        height: 46%;  
+        margin-right: 72px;
+    }
+
+    .interest-s {
+        height: 45%;
+    }
+
+    .goal-title {
+        width: 100%;
+        font-size: 2em;
+        color: $color-gray;
+        height: 15%;
+        margin-right: 30px;
+    }
+
+    .goals-section-s {
+        width: 650px;
+        height: 600px;
+    }
+
+    .goals-s {
+        display: flex;
+        flex-wrap: wrap;
+        height: 45%;
+        margin-right: 45px;
+        width: 70%;
+        justify-content: center;
+    }
+
+    .goal-s {
+        height: 40%;
+        height: 40%;
+    }
+
+    .footer-section-s {
+        margin-top: -30px;
+    }
+
+    .contact-section-s {
+        width: 65%;
+    }
+
+    .contact-p-s {
+        font-size: 1.125em;
+    }
+
+    .social-s {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fb-s, .tw-s, .li-s {
+        width: 30%;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 5em;
+      }
+      
+    h2 {
+        font-size: 3em;
+        margin: auto;
+    }
+    
+    h3 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.425em;
+    }
+
+
+    .contact-b {
+        font-size: 2.25em;
+    }
+
+    .about-me-heading {
+        width: 46%;
+        margin: 7px;
+    }
+
+    .experience {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 98%;
+    }
+
+    .thc-heading, .foll {
+        width: 46%;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    .projects {
+        width: 93%;
+    }
+
+    .footer-container {
+        width: 94.5%;
+    }
+
+}

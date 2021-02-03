@@ -28,14 +28,14 @@ ul, ol {
 
 hr {
   margin: 10px 0px;
-  opacity: .25;
+  opacity: 0.25;
 }
 
 /* FORM DEFAULTS */
 form h2 {
   margin: 25px auto;
   text-align: center;
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: "Averia Serif Libre", cursive;
 }
 
 form input {
@@ -61,7 +61,7 @@ form input:focus {
   border: none;
   border-radius: 5px;
   display: block;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin: 10px 0px;
   padding: 13px 20px;
   text-decoration: none;
@@ -86,7 +86,7 @@ form input:focus {
 
 .navbar ul li {
   float: left;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .navbar ul li a {
@@ -114,7 +114,7 @@ form input:focus {
   font-size: 3em;
   letter-spacing: 5px;
   font-weight: 100;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
 }
 
 /* FOOTER */
@@ -150,19 +150,20 @@ body {
 }
 
 h1 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 2.5em;
   width: 100%;
+  margin: 20px 0;
 }
 
 h2 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 1.5em;
   width: 100%;
 }
 
 h3 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 1.25em;
 }
 
@@ -198,7 +199,6 @@ a {
   width: 85%;
   height: auto;
   justify-content: center;
-  padding-right: 10px;
 }
 
 .inner-container {
@@ -249,8 +249,9 @@ a {
 
 .text {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   display: block;
+  overflow-y: scroll;
 }
 
 .text::-webkit-scrollbar {
@@ -353,6 +354,10 @@ img {
   border-radius: 25px;
 }
 
+.design {
+  display: none;
+}
+
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -361,34 +366,6 @@ img {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-@-moz-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(5000px, 0px, 0px);
-  }
-}
-
 .background-container {
   position: absolute;
   top: 0;
@@ -418,10 +395,6 @@ img {
   top: 0;
   bottom: 0;
   z-index: 2;
-  -moz-animation: move-background 70s linear infinite;
-  -ms-animation: move-background 70s linear infinite;
-  -o-animation: move-background 70s linear infinite;
-  -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
 }
 
@@ -480,24 +453,28 @@ img {
 }
 
 .intro-text {
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
 .head {
-  width: 75%;
+  width: 300px;
   border: 3px solid #f1f3f3;
   margin: 5px auto;
+  height: auto;
+  border-radius: 50%;
 }
 
 .lloydd {
   height: 100%;
+  border-radius: 50%;
 }
 
 .lloyd {
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .ab-sections {
@@ -530,12 +507,13 @@ img {
   border-radius: 25px;
   width: 90%;
   margin: 7px;
-  height: 45%;
   overflow-y: scroll;
   z-index: 5;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 150px;
+  cursor: pointer;
 }
 
 .about-me-heading::-webkit-scrollbar {
@@ -544,6 +522,14 @@ img {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.active-s {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .select-buttons {
@@ -558,6 +544,11 @@ img {
   display: flex;
   height: 35%;
   flex-direction: column;
+}
+
+.high {
+  height: 500px;
+  margin: auto;
 }
 
 .introduction-text {
@@ -636,6 +627,7 @@ img {
 .video-height, .you-t {
   height: 100%;
   margin: auto;
+  width: 100%;
 }
 
 .pc-1 {
@@ -649,6 +641,7 @@ header {
   align-items: center;
   z-index: 10;
   width: 100%;
+  height: 100px;
 }
 
 .title-container {
@@ -657,6 +650,7 @@ header {
   width: 85%;
   justify-content: center;
   height: 100%;
+  margin-bottom: 30px;
 }
 
 .header-text {
@@ -673,7 +667,7 @@ header {
 }
 
 .footer-container {
-  width: 85%;
+  width: 95%;
   display: flex;
   justify-content: center;
 }
@@ -685,12 +679,23 @@ header {
   text-align: center;
 }
 
-.footer-contact {
-  width: 100%;
-  margin: 10px 0;
+.contact-section {
+  width: 90%;
+}
+.contact-section h2 {
+  margin-top: 10px;
 }
 
-.contact-b {
+.footer-contact {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact-p {
+  margin: 20px 0;
+}
+
+.contact-b, .contact-bs {
   font-size: 1.5em;
   color: #28464B;
   border: #28464B 3px solid;
@@ -704,36 +709,40 @@ header {
 .social {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 90%;
   height: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .fb {
   background-color: #3b5998;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .tw {
   background-color: #00aced;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .li {
   background-color: #0077b5;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .fbutton, .twbutton, .libutton {
@@ -756,6 +765,10 @@ header {
   margin: 10px;
 }
 
+.exp-text-thc {
+  margin-top: -20px;
+}
+
 .fol-exp, .thc-exp {
   display: flex;
   flex-direction: column;
@@ -776,6 +789,7 @@ header {
   margin: 5px;
   width: 200px;
   height: 200px;
+  margin-top: -10px;
 }
 
 .fo {
@@ -984,6 +998,7 @@ header {
   /* Remove this if you don't want the 3D effect */
   z-index: 100;
   overflow: visible;
+  padding-right: 30vh;
 }
 
 /* This container is needed to position the front and back side */
@@ -1084,6 +1099,7 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  overflow-y: scroll;
 }
 
 .flip-card-front-1s, .flip-card-back-1s {
@@ -1384,9 +1400,9 @@ header {
   transform: rotateY(180deg);
   justify-content: center;
 }
-
 .flip-card-back p {
-  width: 65%;
+  width: 75%;
+  margin: auto;
 }
 
 .flip-card-back-1s {
@@ -1405,7 +1421,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-v p {
   margin: auto;
   width: 75%;
@@ -1419,7 +1434,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-e p {
   margin: auto;
   width: 75%;
@@ -1433,7 +1447,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-m p {
   margin: auto;
   width: 75%;
@@ -1451,7 +1464,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-s p {
   margin: auto;
   width: 75%;
@@ -1465,7 +1477,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-u p {
   margin: auto;
   width: 75%;
@@ -1479,7 +1490,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-n p {
   margin: auto;
   width: 75%;
@@ -1571,85 +1581,307 @@ header {
   border: #28464B 3px solid;
 }
 
+.off {
+  /* Safari */
+  transition: all 2s;
+}
+
+.flips {
+  perspective: 900px;
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  /* Safari */
+  transition: all 1s;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flips .flip.flipped {
+  transform: rotatex(-180deg);
+  height: 100%;
+  z-index: 100;
+}
+
+.flips .flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  /* Safari */
+  transition: all 1s;
+}
+
+.flips .flip .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  font-size: 2em;
+  font-family: arial, sans-serif;
+  text-align: center;
+  /* Safari */
+  transition: all 0.5s;
+}
+
+.flips .flip .front {
+  position: absolute;
+  z-index: 1;
+}
+
+.flips .flip .back {
+  transform: rotatex(-180deg);
+}
+
+.flips .flip .front,
+.flips .flip .back {
+  cursor: pointer;
+}
+
+.big {
+  height: 100%;
+  width: 100%;
+  top: 0% !important;
+  margin-left: 0%;
+  margin-right: 0%;
+  z-index: 100;
+}
+
 @media screen and (min-width: 480px) {
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
+
   h2 {
-    font-size: 1.55em;
+    font-size: 1.85em;
   }
+
   h3 {
-    font-size: 1.5em;
+    font-size: 1.65em;
   }
+
+  h4 {
+    font-size: 1.45em;
+  }
+
   p {
-    font-size: 1em;
+    font-size: 1.125em;
   }
+
   .contact-b {
     font-size: 1.125em;
   }
 }
-
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
+
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: auto;
   }
+
   h3 {
     font-size: 1.75em;
   }
+
+  h4 {
+    font-size: 1.65em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
   .contact-b {
     font-size: 1.25em;
   }
+
+  .header {
+    height: 100%;
+  }
+
   .section, .ab-text {
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .headings {
     width: 40%;
   }
+
   .about-me-heading {
-    width: 45%;
+    width: 82%;
     margin: 7px;
   }
+
   .active-s {
     width: 90%;
     justify-content: flex-start;
-    height: 250px;
   }
+
   .wide {
     width: 70%;
   }
+
   .thc-heading, .foll {
-    width: 92%;
+    width: 82%;
   }
+
   .attributes {
     align-items: stretch;
   }
+
   .card {
     height: 500px;
   }
+
   .ab-text {
     flex-direction: row;
   }
+
   .flip-card-1s {
     height: 500px;
   }
-  .head {
-    width: 90%;
-  }
-  .intro-text {
-    width: 90%;
-    margin: auto;
+
+  .projects {
+    width: 82%;
   }
 }
-
 @media screen and (min-width: 990px) {
-  .small-screen {
-    display: none;
+  h1 {
+    font-size: 4em;
   }
+
+  h2 {
+    font-size: 2.75em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.25em;
+  }
+
+  h4 {
+    font-size: 1.85em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  .title-container {
+    align-items: center;
+  }
+
+  .inner-container {
+    margin: 50px 0;
+  }
+
+  .abouttt {
+    width: 100%;
+  }
+
+  .intro-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 53%;
+  }
+
+  .about-me-heading {
+    width: 46.5%;
+  }
+
+  .headings {
+    width: 30%;
+  }
+
+  .experience {
+    flex-direction: row;
+    width: 96%;
+  }
+
+  .thc-heading, .foll {
+    width: 48%;
+  }
+
+  .projects {
+    width: 96%;
+  }
+
+  .card {
+    height: 400px;
+  }
+
+  .goals {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 96%;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.425em;
+  }
+
+  .contact-b {
+    font-size: 2.25em;
+  }
+
+  .about-me-heading {
+    width: 46%;
+    margin: 7px;
+  }
+
+  .experience {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 98%;
+  }
+
+  .thc-heading, .foll {
+    width: 46%;
+  }
+
+  .card {
+    height: 500px;
+  }
+
+  .projects {
+    width: 93%;
+  }
+
+  .footer-container {
+    width: 94.5%;
+  }
+}
+@media screen and (min-width: 990px) {
   .large-screen {
     display: flex;
     flex-direction: column;
@@ -1659,105 +1891,119 @@ header {
     height: 100vh;
     position: relative;
   }
-  .title-container {
-    align-items: center;
+
+  .design {
+    display: block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin: 10px;
   }
+
   .header-text {
     display: flex;
   }
-  h1 {
-    font-size: 5em;
-  }
-  p {
-    font-size: 0.75em;
-  }
-  header p {
-    font-size: 1.25em;
-  }
-  .contact-b {
+
+  .contact-bs {
     font-size: 2em;
   }
+
   .a-container {
     flex-direction: column;
     justify-content: center;
   }
-  .inner-container {
-    margin: 0;
-    height: 100%;
+
+  .planet-title {
+    font-size: 2em;
   }
-  .thc-heading, .foll {
-    width: 40%;
-  }
-  .experience {
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: center;
-    height: 55%;
-  }
-  .attributes {
-    align-items: center;
-    height: 71%;
-    margin-top: -17px;
-    width: 90%;
-  }
-  .attributes-headings {
-    width: 23%;
-  }
+
   .content {
     justify-content: space-around;
   }
-  .abouttt {
+
+  .section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abouttt-s {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
+    width: 80%;
   }
-  .head {
+
+  .head-s {
     width: 55%;
   }
-  .intro-text {
-    border: #f1f3f3 3px solid;
-    background-color: #28464B;
+
+  .introduction-text {
     width: 90%;
-    margin: 0;
+    margin: auto;
   }
-  .intro-text:-webkit-scrollbar {
+
+  .introduction-text:-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
   }
-  .section-text {
-    display: flex;
+
+  .about-title-s {
+    width: 100%;
+    height: 75px;
+    font-size: 2em;
+    color: #f1f3f3;
+  }
+
+  .attributes-s {
     align-items: center;
+    height: 71%;
+    margin-top: -17px;
+    width: 90%;
+  }
+
+  .attr-title {
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #28464B;
+    position: absolute;
+    top: 20px;
+  }
+
+  .attributes-headings-s {
+    width: 23%;
+  }
+
+  .exp-title {
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #f1f3f3;
+    position: absolute;
+    top: 20px;
+  }
+
+  .experience-s {
+    align-items: flex-start;
+    flex-direction: row;
     justify-content: center;
-  }
-  .goal-title {
+    height: 55%;
+    display: flex;
     width: 100%;
-    font-size: 2em;
-    color: #28464B;
-    height: 15%;
-    margin-right: 30px;
   }
-  .int-title {
-    margin-top: 100px;
-    margin-right: 55px;
-    font-size: 2em;
-    color: #f1f3f3;
-    top: 30;
+
+  .thc-heading-s, .foll-s {
+    width: 40%;
+    margin: 10px;
   }
-  .attr-title, .exp-title, .proj-title {
-    width: 100%;
-    height: 15%;
-    font-size: 2em;
-    color: #f1f3f3;
-    position: absolute;
-    top: 20px;
-  }
-  .attr-title, .hob-title {
+
+  .hob-title {
     width: 100%;
     height: 15%;
     font-size: 2em;
@@ -1765,6 +2011,69 @@ header {
     position: absolute;
     top: 20px;
   }
+
+  .hobbies-s {
+    width: 86%;
+    height: 60%;
+  }
+
+  .hobbie-s {
+    width: 29%;
+    height: 45%;
+  }
+
+  .proj-title {
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #f1f3f3;
+    position: absolute;
+    top: 20px;
+  }
+
+  .projects-s {
+    border: none;
+  }
+
+  .proj-intro-s {
+    width: 100%;
+  }
+  .proj-intro-s p {
+    font-size: 1.125em;
+    margin-top: 5px;
+  }
+
+  .proj-details-s {
+    width: 73%;
+    height: 70%;
+    overflow-y: scroll;
+  }
+
+  .card-s {
+    height: 400px;
+    overflow-y: scroll;
+  }
+
+  .video-height-s {
+    justify-content: flex-start;
+  }
+
+  .show-s {
+    background-color: #28464B;
+    color: #f1f3f3;
+    margin-bottom: 5px;
+  }
+
+  .you-t-s {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-dots {
+    bottom: -18px;
+    z-index: 4;
+  }
+
   .stack-title {
     width: 100%;
     font-size: 2em;
@@ -1772,113 +2081,146 @@ header {
     height: 15%;
     margin-top: -130px;
   }
-  .about-title {
-    width: 100%;
-    height: 75px;
-    font-size: 2em;
-    color: #f1f3f3;
-  }
-  .hobbies {
-    width: 86%;
-    height: 60%;
-  }
-  .hobbie {
-    width: 29%;
-    height: 45%;
-  }
-  .projects {
-    border: none;
-  }
-  .proj-intro {
-    font-size: 1.25em;
-    width: 100%;
-  }
-  .proj-details {
-    width: 73%;
-    height: 70%;
-  }
-  .card {
-    height: 304px;
-    overflow-y: scroll;
-  }
-  .video-height {
-    justify-content: flex-start;
-  }
-  .show {
-    background-color: #28464B;
-  }
-  .you-t {
-    width: 100%;
-  }
-  .stack {
+
+  .stack-s {
     width: 570px;
     height: 60%;
     margin-right: 30px;
     margin-top: -20px;
   }
-  .stack-headings {
+
+  .stack-headings-s {
     height: 30%;
     width: 27%;
   }
-  .interests-section {
+
+  .int-title {
+    margin-top: 100px;
+    margin-right: 55px;
+    font-size: 2em;
+    color: #f1f3f3;
+    top: 30;
+  }
+
+  .interests-section-s {
     width: 625px;
     height: 625px;
   }
-  .interests {
+
+  .interests-s {
     width: 86%;
     height: 46%;
     margin-right: 72px;
   }
-  .interest {
+
+  .interest-s {
     height: 45%;
   }
-  .goals-section {
+
+  .goal-title {
+    width: 100%;
+    font-size: 2em;
+    color: #28464B;
+    height: 15%;
+    margin-right: 30px;
+  }
+
+  .goals-section-s {
     width: 650px;
     height: 600px;
   }
-  .goals {
-    width: 70%;
+
+  .goals-s {
+    display: flex;
+    flex-wrap: wrap;
     height: 45%;
     margin-right: 45px;
+    width: 70%;
+    justify-content: center;
   }
-  .goal {
+
+  .goal-s {
     height: 40%;
     height: 40%;
   }
-  .footer-section {
+
+  .footer-section-s {
     margin-top: -30px;
   }
-  .contact-section {
-    width: 85%;
+
+  .contact-section-s {
+    width: 65%;
   }
-  .contact-p {
-    font-size: 1.25em;
+
+  .contact-p-s {
+    font-size: 1.125em;
   }
-  .social {
+
+  .social-s {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
   }
-  .fb, .tw, .li {
+
+  .fb-s, .tw-s, .li-s {
     width: 30%;
   }
-}
 
+  .hide {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.425em;
+  }
+
   .contact-b {
     font-size: 2.25em;
   }
-  .card {
-    height: 305px;
-  }
+
   .about-me-heading {
-    width: 30%;
+    width: 46%;
     margin: 7px;
   }
+
   .experience {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    width: 98%;
   }
-  .head {
-    width: 50%;
+
+  .thc-heading, .foll {
+    width: 46%;
+  }
+
+  .card {
+    height: 500px;
+  }
+
+  .projects {
+    width: 93%;
+  }
+
+  .footer-container {
+    width: 94.5%;
   }
 }

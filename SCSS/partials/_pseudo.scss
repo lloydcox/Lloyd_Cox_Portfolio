@@ -168,6 +168,7 @@
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     z-index: 100;
     overflow: visible;
+    padding-right: 30vh;
   }
   
   /* This container is needed to position the front and back side */
@@ -268,6 +269,7 @@
     display: flex;
     align-items: center;   
     border-radius: 25px; 
+    overflow-y: scroll;
   }
 
   .flip-card-front-1s, .flip-card-back-1s {
@@ -565,7 +567,8 @@
     transform: rotateY(180deg);
     justify-content: center;
     p {
-      width: 65%;
+      width: 75%;
+      margin: auto;
     }
   }
 
@@ -753,3 +756,79 @@
   border: $color-gray 3px solid;
 }
 
+
+.off {
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
+}
+
+.flips {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+ 
+.flips .flip.flipped {
+  -webkit-transform: rotatex(-180deg);
+  -moz-transform: rotatex(-180deg);
+  transform: rotatex(-180deg);
+  height: 100%;
+  z-index: 100;
+}
+
+.flips .flip {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+}
+
+.flips .flip .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  -moz-backface-visibility: hidden ;
+  backface-visibility: hidden ;
+  z-index: 2;
+  font-size: 2em;
+  font-family: arial, sans-serif;
+  text-align: center;
+  -webkit-transition: all 0.5s; /* Safari */
+  transition: all 0.5s;
+}
+
+.flips .flip .front {
+  position: absolute;
+  z-index: 1;
+}
+
+.flips .flip .back {
+  -webkit-transform: rotatex(-180deg);
+  -moz-transform: rotatex(-180deg);
+  transform: rotatex(-180deg);
+}
+
+.flips .flip .front,
+.flips .flip .back{
+  cursor: pointer;
+}
+
+.big {
+height:100%;
+width:100%;
+top: 0% !important;
+margin-left: 0%;
+margin-right: 0%;
+z-index:100;
+}
