@@ -131,6 +131,10 @@ form input:focus {
   padding: 20px 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   background-size: cover;
@@ -153,6 +157,7 @@ h1 {
   font-family: "Carrois Gothic", sans-serif;
   font-size: 2.5em;
   width: 100%;
+  margin: 20px 0;
 }
 
 h2 {
@@ -198,7 +203,6 @@ a {
   width: 85%;
   height: auto;
   justify-content: center;
-  padding-right: 10px;
 }
 
 .inner-container {
@@ -249,8 +253,9 @@ a {
 
 .text {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   display: block;
+  overflow-y: scroll;
 }
 
 .text::-webkit-scrollbar {
@@ -353,6 +358,13 @@ img {
   border-radius: 25px;
 }
 
+
+.design {
+  display: none;
+}
+
+
+
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -448,14 +460,15 @@ img {
 }
 
 .intro-text {
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
 .head {
-  width: 75%;
+  width: 300px;
   border: 3px solid #f1f3f3;
   margin: 5px auto;
+  height: auto;
 }
 
 .lloydd {
@@ -498,12 +511,13 @@ img {
   border-radius: 25px;
   width: 90%;
   margin: 7px;
-  height: 45%;
   overflow-y: scroll;
   z-index: 5;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 150px;
+  cursor: pointer;
 }
 
 .about-me-heading::-webkit-scrollbar {
@@ -514,18 +528,41 @@ img {
   /* Firefox */
 }
 
+.head-s {
+  border: 3px solid #28464B;
+}
+
+.active-s {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .select-buttons {
   display: flex;
   justify-content: space-around;
-  width: 85%;
+  width: 45%;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .holding {
   display: flex;
-  height: 35%;
+  height: 40%;
   flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.high {
+  height: 500px;
+  margin: auto;
+}
+
+.hold-height {
+  margin-bottom: 75px;
+  height: 55%;
 }
 
 .introduction-text {
@@ -540,19 +577,22 @@ img {
   scrollbar-width: none;
   /* Firefox */
 }
+.introduction-text p {
+  margin: 15px 21px 21px 21px;
+}
 
 .introduction-text::-webkit-scrollbar {
   display: none;
 }
 
-.work, .personal, .intro {
+.work-s, .personal, .intro {
   margin: 10px 0px;
   padding: 5px 10px;
-  width: 40%;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: 800;
   height: 50px;
   font-size: 1.25em;
+  width: 65%;
 }
 
 .p-container {
@@ -604,6 +644,7 @@ img {
 .video-height, .you-t {
   height: 100%;
   margin: auto;
+  width: 100%;
 }
 
 .pc-1 {
@@ -617,6 +658,7 @@ header {
   align-items: center;
   z-index: 10;
   width: 100%;
+  height: 100px;
 }
 
 .title-container {
@@ -625,6 +667,7 @@ header {
   width: 85%;
   justify-content: center;
   height: 100%;
+  margin-bottom: 30px;
 }
 
 .header-text {
@@ -641,7 +684,7 @@ header {
 }
 
 .footer-container {
-  width: 85%;
+  width: 95%;
   display: flex;
   justify-content: center;
 }
@@ -653,12 +696,23 @@ header {
   text-align: center;
 }
 
-.footer-contact {
-  width: 100%;
-  margin: 10px 0;
+.contact-section {
+  width: 90%;
+}
+.contact-section h2 {
+  margin-top: 10px;
 }
 
-.contact-b {
+.footer-contact {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact-p {
+  margin: 20px 0;
+}
+
+.contact-b, .contact-bs {
   font-size: 1.5em;
   color: #28464B;
   border: #28464B 3px solid;
@@ -672,36 +726,40 @@ header {
 .social {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 90%;
   height: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .fb {
   background-color: #3b5998;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .tw {
   background-color: #00aced;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .li {
   background-color: #0077b5;
-  width: 32%;
+  width: 25%;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .fbutton, .twbutton, .libutton {
@@ -724,6 +782,10 @@ header {
   margin: 10px;
 }
 
+.exp-text-thc {
+  margin-top: -20px;
+}
+
 .fol-exp, .thc-exp {
   display: flex;
   flex-direction: column;
@@ -744,6 +806,7 @@ header {
   margin: 5px;
   width: 200px;
   height: 200px;
+  margin-top: -10px;
 }
 
 .fo {
@@ -952,6 +1015,7 @@ header {
   /* Remove this if you don't want the 3D effect */
   z-index: 100;
   overflow: visible;
+  padding-right: 30vh;
 }
 
 /* This container is needed to position the front and back side */
@@ -1052,6 +1116,7 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  overflow-y: scroll;
 }
 
 .flip-card-front-1s, .flip-card-back-1s {
@@ -1353,7 +1418,8 @@ header {
   justify-content: center;
 }
 .flip-card-back p {
-  width: 65%;
+  width: 75%;
+  margin: auto;
 }
 
 .flip-card-back-1s {
@@ -1532,21 +1598,75 @@ header {
   border: #28464B 3px solid;
 }
 
+.about-me-heding {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.textBox {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.textBox span {
+  width: 90%;
+  position: absolute;
+  transform: translateY(0);
+  transition: 15s;
+}
+
+.textBox:hover span {
+  transform: translateY(calc(350px - 100%));
+}
+
+.textBox2 {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.textBox2 span {
+  width: 100%;
+  position: absolute;
+  transform: translateY(0);
+  transition: linear 55s;
+}
+
+.textBox2:hover span {
+  transform: translateY(calc(140px - 100%));
+}
+
 @media screen and (min-width: 480px) {
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   h2 {
-    font-size: 1.55em;
+    font-size: 1.85em;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.65em;
+  }
+
+  h4 {
+    font-size: 1.45em;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.125em;
   }
 
   .contact-b {
@@ -1555,11 +1675,11 @@ header {
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: auto;
   }
 
@@ -1567,9 +1687,25 @@ header {
     font-size: 1.75em;
   }
 
+  h4 {
+    font-size: 1.65em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
+
+
   .contact-b {
     font-size: 1.25em;
   }
+
+  .header {
+    height: 100%;
+  }
+
+
 
   .section, .ab-text {
     flex-wrap: wrap;
@@ -1581,14 +1717,13 @@ header {
   }
 
   .about-me-heading {
-    width: 45%;
+    width: 82%;
     margin: 7px;
   }
 
   .active-s {
     width: 90%;
     justify-content: flex-start;
-    height: 250px;
   }
 
   .wide {
@@ -1596,7 +1731,7 @@ header {
   }
 
   .thc-heading, .foll {
-    width: 92%;
+    width: 82%;
   }
 
   .attributes {
@@ -1614,6 +1749,32 @@ header {
   .flip-card-1s {
     height: 500px;
   }
+
+
+  .projects {
+    width: 82%;
+  }
+}
+@media screen and (min-width: 990px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.75em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.25em;
+  }
+
+  h4 {
+    font-size: 1.85em;
+  }
+
+  p {
+    font-size: 1.1125em;
 
   .head {
     width: 90%;
@@ -1637,11 +1798,179 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
+
   }
 
   .title-container {
     align-items: center;
   }
+
+
+  .inner-container {
+    margin: 50px 0;
+  }
+
+  .abouttt {
+    width: 100%;
+  }
+
+  .intro-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 53%;
+  }
+
+  .about-me-heading {
+    width: 46.5%;
+  }
+
+  .headings {
+    width: 30%;
+  }
+
+  .experience {
+    flex-direction: row;
+    width: 96%;
+  }
+
+  .exp-flip {
+    height: 400px;
+  }
+
+  .thc-heading, .foll {
+    width: 48%;
+  }
+
+  .projects {
+    width: 96%;
+  }
+
+  .card {
+    height: 400px;
+  }
+
+  .goals {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 96%;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+
+  .high {
+    height: 500px;
+    margin: auto;
+  }
+
+  .work-text {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  .contact-b {
+    font-size: 2.25em;
+  }
+
+  .about-me-heading {
+    width: 46%;
+    margin: 7px;
+  }
+
+  .experience {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 98%;
+  }
+
+  .thc-heading, .foll {
+    width: 46%;
+  }
+
+  .card {
+    height: 500px;
+  }
+
+  .projects {
+    width: 93%;
+  }
+
+  .footer-container {
+    width: 94.5%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .large-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .design {
+    display: block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin: 10px;
+  }
+
+  .header-text {
+    display: flex;
+  }
+
+  .contact-bs {
+    font-size: 2em;
+  }
+
+  .inner-container {
+    margin: 0;
+  }
+
+  .a-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-container-s {
+    height: 100%;
+  }
+
+  .planet-title {
+    font-size: 2em;
+  }
+
+  .content {
+    justify-content: space-around;
+  }
+
 
   .header-text {
     display: flex;
@@ -1727,12 +2056,64 @@ header {
     /* Firefox */
   }
 
+
   .section-text {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+
+  .abouttt-s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+  }
+
+  .head-s {
+    width: 39%;
+    margin-left: 35px;
+  }
+
+  .select-buttons {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .rows {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .button-size {
+    width: 40%;
+  }
+
+  .introduction-text {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .introduction-text:-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .holding p {
+    font-size: 1em;
+  }
+
+  .about-title-s {
+    width: 100%;
+    height: 75px;
+=======
   .goal-title {
     width: 100%;
     font-size: 2em;
@@ -1744,159 +2125,322 @@ header {
   .int-title {
     margin-top: 100px;
     margin-right: 55px;
+>
+    font-size: 2em;
+    color: #f1f3f3;
+    margin-top: 10px;
+  }
+
+  .attributes-s {
+    align-items: center;
+    height: 95%;
+    margin-top: -17px;
+    width: 90%;
+  }
+
+
+  .attr-title {
+
+
+
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #28464B;
+    position: absolute;
+    top: 20px;
+  }
+
+
+  .attributes-headings-s {
+    width: 23%;
+  }
+
+  .exp-title {
+
+ 
+
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #f1f3f3;
+    position: absolute;
+    top: 20px;
+  }
+
+
+  .experience-container-s {
+    height: 100%;
+  }
+
+  .experience-s {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 70%;
+    display: flex;
+
+
+
+
+  .exp-flip-s {
+    height: 300px;
+  }
+
+  .thc-heading-s, .foll-s {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .hobbies-container-s {
+    height: 100%;
+  }
+
+  .hob-title-s {
+
+  
+
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #28464B;
+    position: absolute;
+    top: 40px;
+  }
+
+
+  .hobbies-s {
+
+
+    width: 86%;
+    height: 60%;
+  }
+
+
+  .hobbie-s {
+
+
+    width: 29%;
+    height: 50%;
+  }
+
+
+  .proj-title {
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    color: #f1f3f3;
+    position: absolute;
+    top: 20px;
+  }
+
+  .projects-s {
+    border: none;
+  }
+
+  .proj-intro-s {
+    width: 100%;
+  }
+  .proj-intro-s p {
+    font-size: 1.125em;
+    margin-top: 5px;
+  }
+
+  .proj-details-s {
+
+
+
+    width: 73%;
+    height: 70%;
+    overflow-y: scroll;
+  }
+
+
+  .card-s {
+    height: 400px;
+    overflow-y: scroll;
+  }
+
+  .video-height-s {
+    justify-content: flex-start;
+  }
+
+  .show-s {
+
+
+    background-color: #28464B;
+    color: #f1f3f3;
+    margin-bottom: 5px;
+  }
+
+
+  .you-t-s {
+
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-dots {
+    bottom: -18px;
+    z-index: 4;
+  }
+
+
+  .stack-container-s {
+    height: 100%;
+  }
+
+  .stack-title-s {
+    width: 100%;
+    font-size: 2em;
+    color: #28464B;
+    height: 15%;
+  }
+
+  .stack-s {
+
+
+    width: 570px;
+    height: 75%;
+    margin-right: 30px;
+    margin-top: -20px;
+  }
+
+
+  .stack-headings-s {
+
+
+    height: 30%;
+    width: 29%;
+  }
+
+  .interests-container-s {
+    height: 100%;
+  }
+
+  .int-title-s {
+    margin-right: 55px;
     font-size: 2em;
     color: #f1f3f3;
     top: 30;
   }
 
-  .attr-title, .exp-title, .proj-title {
-    width: 100%;
-    height: 15%;
-    font-size: 2em;
-    color: #f1f3f3;
-    position: absolute;
-    top: 20px;
-  }
 
-  .attr-title, .hob-title {
-    width: 100%;
-    height: 15%;
-    font-size: 2em;
-    color: #28464B;
-    position: absolute;
-    top: 20px;
-  }
+  .interests-section-s {
 
-  .stack-title {
-    width: 100%;
-    font-size: 2em;
-    color: #28464B;
-    height: 15%;
-    margin-top: -130px;
-  }
-
-  .about-title {
-    width: 100%;
-    height: 75px;
-    font-size: 2em;
-    color: #f1f3f3;
-  }
-
-  .hobbies {
-    width: 86%;
-    height: 60%;
-  }
-
-  .hobbie {
-    width: 29%;
-    height: 45%;
-  }
-
-  .projects {
-    border: none;
-  }
-
-  .proj-intro {
-    font-size: 1.25em;
-    width: 100%;
-  }
-
-  .proj-details {
-    width: 73%;
-    height: 70%;
-  }
-
-  .card {
-    height: 304px;
-    overflow-y: scroll;
-  }
-
-  .video-height {
-    justify-content: flex-start;
-  }
-
-  .show {
-    background-color: #28464B;
-  }
-
-  .you-t {
-    width: 100%;
-  }
-
-  .stack {
-    width: 570px;
-    height: 60%;
-    margin-right: 30px;
-    margin-top: -20px;
-  }
-
-  .stack-headings {
-    height: 30%;
-    width: 27%;
-  }
-
-  .interests-section {
     width: 625px;
-    height: 625px;
+    height: 760px;
   }
 
-  .interests {
-    width: 86%;
-    height: 46%;
+
+  .interests-s {
+    width: 95%;
+    height: 50%;
     margin-right: 72px;
   }
 
-  .interest {
+  .interest-s {
+
+
+
     height: 45%;
+    width: 40%;
   }
 
-  .goals-section {
+
+  .goal-title {
+    width: 100%;
+    font-size: 2em;
+    color: #28464B;
+    height: 15%;
+    margin-right: 30px;
+  }
+
+  .goals-section-s {
+
     width: 650px;
     height: 600px;
   }
 
-  .goals {
-    width: 70%;
-    height: 45%;
+
+  .goals-s {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+
+
     margin-right: 45px;
+    width: 80%;
+    justify-content: center;
   }
 
-  .goal {
+
+  .goal-s {
+
     height: 40%;
-    height: 40%;
+    width: 37%;
   }
 
-  .footer-section {
+
+  .footer-section-s {
     margin-top: -30px;
   }
 
-  .contact-section {
-    width: 85%;
+  .contact-section-s {
+    width: 65%;
   }
 
-  .contact-p {
-    font-size: 1.25em;
+  .contact-p-s {
+    font-size: 1.125em;
   }
 
-  .social {
+  .social-s {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .fb, .tw, .li {
+
+  .fb-s, .tw-s, .li-s {
     width: 30%;
   }
+
+  .hide {
+    display: none;
+  }
+
+
 }
 @media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
   .contact-b {
     font-size: 2.25em;
   }
 
-  .card {
-    height: 305px;
-  }
+
+
+
+
 
   .about-me-heading {
-    width: 30%;
+    width: 46%;
     margin: 7px;
   }
 
@@ -1904,9 +2448,25 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    width: 98%;
   }
 
-  .head {
-    width: 50%;
+
+  .thc-heading, .foll {
+    width: 46%;
   }
+
+  .card {
+    height: 500px;
+  }
+
+  .projects {
+    width: 93%;
+  }
+
+  .footer-container {
+    width: 94.5%;
+  }
+
+
 }

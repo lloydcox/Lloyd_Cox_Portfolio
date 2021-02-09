@@ -1,5 +1,8 @@
 // Base Styles 
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   box-sizing: border-box;
@@ -23,6 +26,7 @@ h1 {
   font-family: 'Carrois Gothic', sans-serif;
   font-size: 2.5em;
   width: 100%;
+  margin: 20px 0;
 }
 
 h2 {
@@ -68,8 +72,6 @@ a {
   width: 85%;
   height: auto;
   justify-content: center;  
-  padding-right: 10px;
-
 }
 
 .inner-container {
@@ -120,8 +122,9 @@ a {
 
 .text {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   display: block;
+  overflow-y: scroll;
 }
 .text::-webkit-scrollbar {
   display: none;
@@ -223,6 +226,11 @@ img {
   border-radius: 25px;
 }
 
+.design {
+  display: none;
+}
+
+
 // space
 
 
@@ -298,24 +306,6 @@ img {
   animation:move-background 70s linear infinite;
 	
 }
-
-// .clouds{
-// 	width:5000px;
-// 	height: 100%;
-// 	background: transparent url("../Imgs/dust.jpg") repeat;
-// 	background-size: 1000px 1000px;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     z-index: 3;
-
-//    -moz-animation:move-background 5s linear infinite;
-//   -ms-animation:move-background 5s linear infinite;
-//   -o-animation:move-background 5s linear infinite;
-//   -webkit-animation:move-background 5s linear infinite;
-//   animation:move-background 5s linear infinite;
-// }
 
 .sun {
   position: fixed;

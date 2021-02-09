@@ -6,7 +6,7 @@
 }
 
 .footer-container {
-    width: 85%;
+    width: 95%;
     display: flex;
     justify-content: center;
 }
@@ -17,12 +17,23 @@
     text-align: center;
 }
 
+.contact-section {
+    width: 90%;
+    h2 {
+        margin-top: 10px;
+    }
+}
+
 .footer-contact {
     width: 100%;
-    margin: 10px 0;
-  }
+    margin-bottom: 30px;
+}
 
-.contact-b {
+.contact-p {
+    margin: 20px 0;
+}
+
+.contact-b, .contact-bs {
     font-size: 1.5em;
     color: $color-gray;
     border: $color-gray 3px solid;
@@ -36,38 +47,43 @@
 .social {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 90%;
     height: 50px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .fb {
     background-color: $color-fb;
-    width: 32%;
+    width: 25%;
     height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 25px;
 }
 
 .tw {
     background-color: $color-tw;
-    width: 32%;
+    width: 25%;
     height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 25px;
 }
 
 .li {
     background-color: $color-li;
-    width: 32%;
+    width: 25%;
     height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 25px;
 }
 
 .fbutton, .twbutton, .libutton {
     color: $color-white;
+
 } 
