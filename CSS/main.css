@@ -358,9 +358,12 @@ img {
   border-radius: 25px;
 }
 
+
 .design {
   display: none;
 }
+
+
 
 @keyframes move-background {
   from {
@@ -1692,6 +1695,8 @@ header {
     font-size: 1.125em;
   }
 
+
+
   .contact-b {
     font-size: 1.25em;
   }
@@ -1699,6 +1704,8 @@ header {
   .header {
     height: 100%;
   }
+
+
 
   .section, .ab-text {
     flex-wrap: wrap;
@@ -1743,6 +1750,7 @@ header {
     height: 500px;
   }
 
+
   .projects {
     width: 82%;
   }
@@ -1767,11 +1775,36 @@ header {
 
   p {
     font-size: 1.1125em;
+
+  .head {
+    width: 90%;
+  }
+
+  .intro-text {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 990px) {
+  .small-screen {
+    display: none;
+  }
+
+  .large-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
   }
 
   .title-container {
     align-items: center;
   }
+
 
   .inner-container {
     margin: 50px 0;
@@ -1938,11 +1971,98 @@ header {
     justify-content: space-around;
   }
 
+
+  .header-text {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+
+  header p {
+    font-size: 1.25em;
+  }
+
+  .contact-b {
+    font-size: 2em;
+  }
+
+  .a-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inner-container {
+    margin: 0;
+    height: 100%;
+  }
+
+  .thc-heading, .foll {
+    width: 40%;
+  }
+
+  .experience {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    height: 55%;
+  }
+
+  .attributes {
+    align-items: center;
+    height: 71%;
+    margin-top: -17px;
+    width: 90%;
+  }
+
+  .attributes-headings {
+    width: 23%;
+  }
+
+  .content {
+    justify-content: space-around;
+  }
+
+  .abouttt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .head {
+    width: 55%;
+  }
+
+  .intro-text {
+    border: #f1f3f3 3px solid;
+    background-color: #28464B;
+    width: 90%;
+    margin: 0;
+  }
+
+  .intro-text:-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+
   .section-text {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
 
   .abouttt-s {
     display: flex;
@@ -1993,6 +2113,19 @@ header {
   .about-title-s {
     width: 100%;
     height: 75px;
+=======
+  .goal-title {
+    width: 100%;
+    font-size: 2em;
+    color: #28464B;
+    height: 15%;
+    margin-right: 30px;
+  }
+
+  .int-title {
+    margin-top: 100px;
+    margin-right: 55px;
+>
     font-size: 2em;
     color: #f1f3f3;
     margin-top: 10px;
@@ -2005,7 +2138,11 @@ header {
     width: 90%;
   }
 
+
   .attr-title {
+
+
+
     width: 100%;
     height: 15%;
     font-size: 2em;
@@ -2014,11 +2151,15 @@ header {
     top: 20px;
   }
 
+
   .attributes-headings-s {
     width: 23%;
   }
 
   .exp-title {
+
+ 
+
     width: 100%;
     height: 15%;
     font-size: 2em;
@@ -2026,6 +2167,7 @@ header {
     position: absolute;
     top: 20px;
   }
+
 
   .experience-container-s {
     height: 100%;
@@ -2037,8 +2179,9 @@ header {
     justify-content: center;
     height: 70%;
     display: flex;
-    width: 100%;
-  }
+
+
+
 
   .exp-flip-s {
     height: 300px;
@@ -2054,6 +2197,9 @@ header {
   }
 
   .hob-title-s {
+
+  
+
     width: 100%;
     height: 15%;
     font-size: 2em;
@@ -2062,15 +2208,22 @@ header {
     top: 40px;
   }
 
+
   .hobbies-s {
+
+
     width: 86%;
     height: 60%;
   }
 
+
   .hobbie-s {
+
+
     width: 29%;
     height: 50%;
   }
+
 
   .proj-title {
     width: 100%;
@@ -2094,10 +2247,14 @@ header {
   }
 
   .proj-details-s {
+
+
+
     width: 73%;
     height: 70%;
     overflow-y: scroll;
   }
+
 
   .card-s {
     height: 400px;
@@ -2109,12 +2266,17 @@ header {
   }
 
   .show-s {
+
+
     background-color: #28464B;
     color: #f1f3f3;
     margin-bottom: 5px;
   }
 
+
   .you-t-s {
+
+
     width: 100%;
     height: 100%;
   }
@@ -2123,6 +2285,7 @@ header {
     bottom: -18px;
     z-index: 4;
   }
+
 
   .stack-container-s {
     height: 100%;
@@ -2136,13 +2299,18 @@ header {
   }
 
   .stack-s {
+
+
     width: 570px;
     height: 75%;
     margin-right: 30px;
     margin-top: -20px;
   }
 
+
   .stack-headings-s {
+
+
     height: 30%;
     width: 29%;
   }
@@ -2158,10 +2326,13 @@ header {
     top: 30;
   }
 
+
   .interests-section-s {
+
     width: 625px;
     height: 760px;
   }
+
 
   .interests-s {
     width: 95%;
@@ -2170,9 +2341,13 @@ header {
   }
 
   .interest-s {
+
+
+
     height: 45%;
     width: 40%;
   }
+
 
   .goal-title {
     width: 100%;
@@ -2183,23 +2358,30 @@ header {
   }
 
   .goals-section-s {
+
     width: 650px;
     height: 600px;
   }
+
 
   .goals-s {
     display: flex;
     flex-wrap: wrap;
     height: 60%;
+
+
     margin-right: 45px;
     width: 80%;
     justify-content: center;
   }
 
+
   .goal-s {
+
     height: 40%;
     width: 37%;
   }
+
 
   .footer-section-s {
     margin-top: -30px;
@@ -2219,6 +2401,7 @@ header {
     justify-content: space-between;
   }
 
+
   .fb-s, .tw-s, .li-s {
     width: 30%;
   }
@@ -2226,6 +2409,8 @@ header {
   .hide {
     display: none;
   }
+
+
 }
 @media screen and (min-width: 1200px) {
   h1 {
@@ -2249,6 +2434,11 @@ header {
     font-size: 2.25em;
   }
 
+
+
+
+
+
   .about-me-heading {
     width: 46%;
     margin: 7px;
@@ -2260,6 +2450,7 @@ header {
     justify-content: center;
     width: 98%;
   }
+
 
   .thc-heading, .foll {
     width: 46%;
@@ -2276,4 +2467,6 @@ header {
   .footer-container {
     width: 94.5%;
   }
+
+
 }
