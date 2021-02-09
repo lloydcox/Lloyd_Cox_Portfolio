@@ -131,6 +131,10 @@ form input:focus {
   padding: 20px 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   background-size: cover;
@@ -462,19 +466,16 @@ img {
   border: 3px solid #f1f3f3;
   margin: 5px auto;
   height: auto;
-  border-radius: 50%;
 }
 
 .lloydd {
   height: 100%;
-  border-radius: 50%;
 }
 
 .lloyd {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
 
 .ab-sections {
@@ -524,6 +525,10 @@ img {
   /* Firefox */
 }
 
+.head-s {
+  border: 3px solid #28464B;
+}
+
 .active-s {
   height: 500px;
   width: 100%;
@@ -535,20 +540,26 @@ img {
 .select-buttons {
   display: flex;
   justify-content: space-around;
-  width: 85%;
+  width: 45%;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .holding {
   display: flex;
-  height: 35%;
+  height: 40%;
   flex-direction: column;
+  margin-bottom: 35px;
 }
 
 .high {
   height: 500px;
   margin: auto;
+}
+
+.hold-height {
+  margin-bottom: 75px;
+  height: 55%;
 }
 
 .introduction-text {
@@ -563,19 +574,22 @@ img {
   scrollbar-width: none;
   /* Firefox */
 }
+.introduction-text p {
+  margin: 15px 21px 21px 21px;
+}
 
 .introduction-text::-webkit-scrollbar {
   display: none;
 }
 
-.work, .personal, .intro {
+.work-s, .personal, .intro {
   margin: 10px 0px;
   padding: 5px 10px;
-  width: 40%;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: 800;
   height: 50px;
   font-size: 1.25em;
+  width: 65%;
 }
 
 .p-container {
@@ -1581,71 +1595,54 @@ header {
   border: #28464B 3px solid;
 }
 
-.off {
-  /* Safari */
-  transition: all 2s;
-}
-
-.flips {
-  perspective: 900px;
-  width: 80%;
-  height: 20%;
-  position: absolute;
-  /* Safari */
-  transition: all 1s;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.flips .flip.flipped {
-  transform: rotatex(-180deg);
-  height: 100%;
-  z-index: 100;
-}
-
-.flips .flip {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  /* Safari */
-  transition: all 1s;
-}
-
-.flips .flip .face {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 2;
-  font-size: 2em;
-  font-family: arial, sans-serif;
+.about-me-heding {
   text-align: center;
-  /* Safari */
-  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
 }
 
-.flips .flip .front {
-  position: absolute;
-  z-index: 1;
-}
-
-.flips .flip .back {
-  transform: rotatex(-180deg);
-}
-
-.flips .flip .front,
-.flips .flip .back {
-  cursor: pointer;
-}
-
-.big {
-  height: 100%;
+.textBox {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  top: 0% !important;
-  margin-left: 0%;
-  margin-right: 0%;
-  z-index: 100;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.textBox span {
+  width: 90%;
+  position: absolute;
+  transform: translateY(0);
+  transition: 15s;
+}
+
+.textBox:hover span {
+  transform: translateY(calc(350px - 100%));
+}
+
+.textBox2 {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.textBox2 span {
+  width: 100%;
+  position: absolute;
+  transform: translateY(0);
+  transition: linear 55s;
+}
+
+.textBox2:hover span {
+  transform: translateY(calc(140px - 100%));
 }
 
 @media screen and (min-width: 480px) {
@@ -1769,7 +1766,7 @@ header {
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 1.1125em;
   }
 
   .title-container {
@@ -1803,6 +1800,10 @@ header {
     width: 96%;
   }
 
+  .exp-flip {
+    height: 400px;
+  }
+
   .thc-heading, .foll {
     width: 48%;
   }
@@ -1826,6 +1827,19 @@ header {
   .contact-section {
     width: 100%;
   }
+
+  .high {
+    height: 500px;
+    margin: auto;
+  }
+
+  .work-text {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   h1 {
@@ -1843,10 +1857,6 @@ header {
 
   h4 {
     font-size: 2em;
-  }
-
-  p {
-    font-size: 1.425em;
   }
 
   .contact-b {
@@ -1907,9 +1917,17 @@ header {
     font-size: 2em;
   }
 
+  .inner-container {
+    margin: 0;
+  }
+
   .a-container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .about-container-s {
+    height: 100%;
   }
 
   .planet-title {
@@ -1928,21 +1946,36 @@ header {
 
   .abouttt-s {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     height: 100%;
     width: 80%;
   }
 
   .head-s {
-    width: 55%;
+    width: 39%;
+    margin-left: 35px;
+  }
+
+  .select-buttons {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .rows {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .button-size {
+    width: 40%;
   }
 
   .introduction-text {
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
   }
 
   .introduction-text:-webkit-scrollbar {
@@ -1953,16 +1986,21 @@ header {
     /* Firefox */
   }
 
+  .holding p {
+    font-size: 1em;
+  }
+
   .about-title-s {
     width: 100%;
     height: 75px;
     font-size: 2em;
     color: #f1f3f3;
+    margin-top: 10px;
   }
 
   .attributes-s {
     align-items: center;
-    height: 71%;
+    height: 95%;
     margin-top: -17px;
     width: 90%;
   }
@@ -1989,13 +2027,21 @@ header {
     top: 20px;
   }
 
+  .experience-container-s {
+    height: 100%;
+  }
+
   .experience-s {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 55%;
+    height: 70%;
     display: flex;
     width: 100%;
+  }
+
+  .exp-flip-s {
+    height: 300px;
   }
 
   .thc-heading-s, .foll-s {
@@ -2003,13 +2049,17 @@ header {
     margin: 10px;
   }
 
-  .hob-title {
+  .hobbies-container-s {
+    height: 100%;
+  }
+
+  .hob-title-s {
     width: 100%;
     height: 15%;
     font-size: 2em;
     color: #28464B;
     position: absolute;
-    top: 20px;
+    top: 40px;
   }
 
   .hobbies-s {
@@ -2019,7 +2069,7 @@ header {
 
   .hobbie-s {
     width: 29%;
-    height: 45%;
+    height: 50%;
   }
 
   .proj-title {
@@ -2074,28 +2124,34 @@ header {
     z-index: 4;
   }
 
-  .stack-title {
+  .stack-container-s {
+    height: 100%;
+  }
+
+  .stack-title-s {
     width: 100%;
     font-size: 2em;
     color: #28464B;
     height: 15%;
-    margin-top: -130px;
   }
 
   .stack-s {
     width: 570px;
-    height: 60%;
+    height: 75%;
     margin-right: 30px;
     margin-top: -20px;
   }
 
   .stack-headings-s {
     height: 30%;
-    width: 27%;
+    width: 29%;
   }
 
-  .int-title {
-    margin-top: 100px;
+  .interests-container-s {
+    height: 100%;
+  }
+
+  .int-title-s {
     margin-right: 55px;
     font-size: 2em;
     color: #f1f3f3;
@@ -2104,17 +2160,18 @@ header {
 
   .interests-section-s {
     width: 625px;
-    height: 625px;
+    height: 760px;
   }
 
   .interests-s {
-    width: 86%;
-    height: 46%;
+    width: 95%;
+    height: 50%;
     margin-right: 72px;
   }
 
   .interest-s {
     height: 45%;
+    width: 40%;
   }
 
   .goal-title {
@@ -2133,15 +2190,15 @@ header {
   .goals-s {
     display: flex;
     flex-wrap: wrap;
-    height: 45%;
+    height: 60%;
     margin-right: 45px;
-    width: 70%;
+    width: 80%;
     justify-content: center;
   }
 
   .goal-s {
     height: 40%;
-    height: 40%;
+    width: 37%;
   }
 
   .footer-section-s {
@@ -2186,10 +2243,6 @@ header {
 
   h4 {
     font-size: 2em;
-  }
-
-  p {
-    font-size: 1.425em;
   }
 
   .contact-b {

@@ -125,7 +125,7 @@
     }
 
     p {
-        font-size: 1.25em;
+        font-size: 1.1125em;
     }
 
     // small screen 
@@ -161,6 +161,10 @@
         width: 96%;
     }
 
+    .exp-flip {
+        height: 400px;
+    }
+
     .thc-heading, .foll {
         width: 48%;
     }    
@@ -184,6 +188,19 @@
     .contact-section {
         width: 100%;
     }
+
+    .high {
+        height: 500px;
+        margin: auto;
+      }
+
+    .work-text {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -204,11 +221,6 @@
     h4 {
         font-size: 2em;
     }
-
-    p {
-        font-size: 1.425em;
-    }
-
 
     .contact-b {
         font-size: 2.25em;

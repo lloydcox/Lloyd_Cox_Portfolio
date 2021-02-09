@@ -18,7 +18,7 @@
         padding: 10px;
         font-size: 1.25em;
         margin: 10px;
-      }
+    }
 
     .header-text {
         display: flex;
@@ -28,10 +28,18 @@
     .contact-bs {
         font-size: 2em;
     }
+
+    .inner-container {
+        margin: 0;
+    }
     
     .a-container {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .about-container-s {
+        height: 100%;
     }
 
     .planet-title {
@@ -50,21 +58,36 @@
 
     .abouttt-s {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-around;
         height: 100%;
         width: 80%;
     }
 
     .head-s {
-        width: 55%;
+        width: 39%;
+        margin-left: 35px;
+    }
+
+    .select-buttons {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .rows {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .button-size {
+        width: 40%;
     }
 
     .introduction-text {
         width: 90%;
-        margin: auto;
+        margin: 10px auto;
     }
 
     .introduction-text:-webkit-scrollbar {
@@ -74,17 +97,24 @@
         scrollbar-width: none;
         /* Firefox */
     }
+
+    .holding {
+        p {
+            font-size: 1em;
+        }
+    }
     
     .about-title-s {
         width: 100%;
         height: 75px;
         font-size: 2em;
         color: $color-white;
+        margin-top: 10px;
     }
 
     .attributes-s {
         align-items: center;
-        height: 71%;
+        height: 95%;
         margin-top: -17px;
         width: 90%;
     }
@@ -111,13 +141,21 @@
         top: 20px;
     }
 
+    .experience-container-s {
+        height: 100%;
+    }
+
     .experience-s {
-        align-items: flex-start;
+        align-items: center;
         flex-direction: row;
         justify-content: center;
-        height: 55%;
+        height: 70%;
         display: flex;
         width: 100%;
+    }
+
+    .exp-flip-s {
+        height: 300px;
     }
 
     .thc-heading-s, .foll-s {
@@ -125,13 +163,16 @@
         margin: 10px;
     }
 
-    .hob-title {
+    .hobbies-container-s {
+        height: 100%;
+    }
+    .hob-title-s {
         width: 100%;
         height: 15%;
         font-size: 2em;
         color: $color-gray;
         position: absolute;
-        top: 20px;
+        top: 40px;
     }
 
     .hobbies-s {
@@ -141,7 +182,7 @@
 
     .hobbie-s {
         width: 29%;
-        height: 45%;
+        height: 50%;
     }
 
     .proj-title {
@@ -196,28 +237,34 @@
         z-index: 4;
     }
 
-    .stack-title {
+    .stack-container-s {
+        height: 100%;
+    }
+
+    .stack-title-s {
         width: 100%;
         font-size: 2em;
         color: $color-gray;
         height: 15%;
-        margin-top: -130px;
     }
 
     .stack-s {
         width: 570px;
-        height: 60%;
+        height: 75%;
         margin-right: 30px;
         margin-top: -20px;
     }
 
     .stack-headings-s {
         height: 30%;
-        width: 27%;
+        width: 29%;
     }
 
-    .int-title {
-        margin-top: 100px;
+    .interests-container-s {
+        height: 100%;
+    }
+
+    .int-title-s {
         margin-right: 55px;
         font-size: 2em;
         color: $color-white;
@@ -226,17 +273,18 @@
 
     .interests-section-s {
         width: 625px;
-        height: 625px;
+        height: 760px;
     }
 
     .interests-s {
-        width: 86%;
-        height: 46%;  
+        width: 95%;
+        height: 50%;  
         margin-right: 72px;
     }
 
     .interest-s {
         height: 45%;
+        width: 40%;
     }
 
     .goal-title {
@@ -255,15 +303,15 @@
     .goals-s {
         display: flex;
         flex-wrap: wrap;
-        height: 45%;
+        height: 60%;
         margin-right: 45px;
-        width: 70%;
+        width: 80%;
         justify-content: center;
     }
 
     .goal-s {
         height: 40%;
-        height: 40%;
+        width: 37%;
     }
 
     .footer-section-s {
@@ -311,11 +359,6 @@
     h4 {
         font-size: 2em;
     }
-
-    p {
-        font-size: 1.425em;
-    }
-
 
     .contact-b {
         font-size: 2.25em;
