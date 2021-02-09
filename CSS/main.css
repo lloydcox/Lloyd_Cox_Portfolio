@@ -28,14 +28,14 @@ ul, ol {
 
 hr {
   margin: 10px 0px;
-  opacity: .25;
+  opacity: 0.25;
 }
 
 /* FORM DEFAULTS */
 form h2 {
   margin: 25px auto;
   text-align: center;
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: "Averia Serif Libre", cursive;
 }
 
 form input {
@@ -61,7 +61,7 @@ form input:focus {
   border: none;
   border-radius: 5px;
   display: block;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin: 10px 0px;
   padding: 13px 20px;
   text-decoration: none;
@@ -86,7 +86,7 @@ form input:focus {
 
 .navbar ul li {
   float: left;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .navbar ul li a {
@@ -114,7 +114,7 @@ form input:focus {
   font-size: 3em;
   letter-spacing: 5px;
   font-weight: 100;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
 }
 
 /* FOOTER */
@@ -150,19 +150,19 @@ body {
 }
 
 h1 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 2.5em;
   width: 100%;
 }
 
 h2 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 1.5em;
   width: 100%;
 }
 
 h3 {
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   font-size: 1.25em;
 }
 
@@ -361,34 +361,6 @@ img {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-@-moz-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    -webkit-transform: translate3d(5000px, 0px, 0px);
-  }
-}
-
 .background-container {
   position: absolute;
   top: 0;
@@ -418,10 +390,6 @@ img {
   top: 0;
   bottom: 0;
   z-index: 2;
-  -moz-animation: move-background 70s linear infinite;
-  -ms-animation: move-background 70s linear infinite;
-  -o-animation: move-background 70s linear infinite;
-  -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
 }
 
@@ -1384,7 +1352,6 @@ header {
   transform: rotateY(180deg);
   justify-content: center;
 }
-
 .flip-card-back p {
   width: 65%;
 }
@@ -1405,7 +1372,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-v p {
   margin: auto;
   width: 75%;
@@ -1419,7 +1385,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-e p {
   margin: auto;
   width: 75%;
@@ -1433,7 +1398,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-m p {
   margin: auto;
   width: 75%;
@@ -1451,7 +1415,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-s p {
   margin: auto;
   width: 75%;
@@ -1465,7 +1428,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-u p {
   margin: auto;
   width: 75%;
@@ -1479,7 +1441,6 @@ header {
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 .flip-card-back-n p {
   margin: auto;
   width: 75%;
@@ -1575,81 +1536,99 @@ header {
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.55em;
   }
+
   h3 {
     font-size: 1.5em;
   }
+
   p {
     font-size: 1em;
   }
+
   .contact-b {
     font-size: 1.125em;
   }
 }
-
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 2.5em;
   }
+
   h2 {
     font-size: 2em;
     margin: auto;
   }
+
   h3 {
     font-size: 1.75em;
   }
+
   .contact-b {
     font-size: 1.25em;
   }
+
   .section, .ab-text {
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .headings {
     width: 40%;
   }
+
   .about-me-heading {
     width: 45%;
     margin: 7px;
   }
+
   .active-s {
     width: 90%;
     justify-content: flex-start;
     height: 250px;
   }
+
   .wide {
     width: 70%;
   }
+
   .thc-heading, .foll {
     width: 92%;
   }
+
   .attributes {
     align-items: stretch;
   }
+
   .card {
     height: 500px;
   }
+
   .ab-text {
     flex-direction: row;
   }
+
   .flip-card-1s {
     height: 500px;
   }
+
   .head {
     width: 90%;
   }
+
   .intro-text {
     width: 90%;
     margin: auto;
   }
 }
-
 @media screen and (min-width: 990px) {
   .small-screen {
     display: none;
   }
+
   .large-screen {
     display: flex;
     flex-direction: column;
@@ -1659,53 +1638,67 @@ header {
     height: 100vh;
     position: relative;
   }
+
   .title-container {
     align-items: center;
   }
+
   .header-text {
     display: flex;
   }
+
   h1 {
     font-size: 5em;
   }
+
   p {
     font-size: 0.75em;
   }
+
   header p {
     font-size: 1.25em;
   }
+
   .contact-b {
     font-size: 2em;
   }
+
   .a-container {
     flex-direction: column;
     justify-content: center;
   }
+
   .inner-container {
     margin: 0;
     height: 100%;
   }
+
   .thc-heading, .foll {
     width: 40%;
   }
+
   .experience {
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
     height: 55%;
   }
+
   .attributes {
     align-items: center;
     height: 71%;
     margin-top: -17px;
     width: 90%;
   }
+
   .attributes-headings {
     width: 23%;
   }
+
   .content {
     justify-content: space-around;
   }
+
   .abouttt {
     display: flex;
     flex-direction: column;
@@ -1714,15 +1707,18 @@ header {
     justify-content: flex-start;
     height: 100%;
   }
+
   .head {
     width: 55%;
   }
+
   .intro-text {
     border: #f1f3f3 3px solid;
     background-color: #28464B;
     width: 90%;
     margin: 0;
   }
+
   .intro-text:-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
@@ -1730,11 +1726,13 @@ header {
     scrollbar-width: none;
     /* Firefox */
   }
+
   .section-text {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .goal-title {
     width: 100%;
     font-size: 2em;
@@ -1742,6 +1740,7 @@ header {
     height: 15%;
     margin-right: 30px;
   }
+
   .int-title {
     margin-top: 100px;
     margin-right: 55px;
@@ -1749,6 +1748,7 @@ header {
     color: #f1f3f3;
     top: 30;
   }
+
   .attr-title, .exp-title, .proj-title {
     width: 100%;
     height: 15%;
@@ -1757,6 +1757,7 @@ header {
     position: absolute;
     top: 20px;
   }
+
   .attr-title, .hob-title {
     width: 100%;
     height: 15%;
@@ -1765,6 +1766,7 @@ header {
     position: absolute;
     top: 20px;
   }
+
   .stack-title {
     width: 100%;
     font-size: 2em;
@@ -1772,112 +1774,138 @@ header {
     height: 15%;
     margin-top: -130px;
   }
+
   .about-title {
     width: 100%;
     height: 75px;
     font-size: 2em;
     color: #f1f3f3;
   }
+
   .hobbies {
     width: 86%;
     height: 60%;
   }
+
   .hobbie {
     width: 29%;
     height: 45%;
   }
+
   .projects {
     border: none;
   }
+
   .proj-intro {
     font-size: 1.25em;
     width: 100%;
   }
+
   .proj-details {
     width: 73%;
     height: 70%;
   }
+
   .card {
     height: 304px;
     overflow-y: scroll;
   }
+
   .video-height {
     justify-content: flex-start;
   }
+
   .show {
     background-color: #28464B;
   }
+
   .you-t {
     width: 100%;
   }
+
   .stack {
     width: 570px;
     height: 60%;
     margin-right: 30px;
     margin-top: -20px;
   }
+
   .stack-headings {
     height: 30%;
     width: 27%;
   }
+
   .interests-section {
     width: 625px;
     height: 625px;
   }
+
   .interests {
     width: 86%;
     height: 46%;
     margin-right: 72px;
   }
+
   .interest {
     height: 45%;
   }
+
   .goals-section {
     width: 650px;
     height: 600px;
   }
+
   .goals {
     width: 70%;
     height: 45%;
     margin-right: 45px;
   }
+
   .goal {
     height: 40%;
     height: 40%;
   }
+
   .footer-section {
     margin-top: -30px;
   }
+
   .contact-section {
     width: 85%;
   }
+
   .contact-p {
     font-size: 1.25em;
   }
+
   .social {
     width: 90%;
   }
+
   .fb, .tw, .li {
     width: 30%;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contact-b {
     font-size: 2.25em;
   }
+
   .card {
     height: 305px;
   }
+
   .about-me-heading {
     width: 30%;
     margin: 7px;
   }
+
   .experience {
     align-items: center;
     flex-direction: row;
     justify-content: center;
   }
+
   .head {
     width: 50%;
   }
