@@ -32,6 +32,7 @@
         width: 100vw;
         height: 100vh;
         position: relative;
+        // cursor: url(../Imgs/anaconda.png), auto;
     }
 
     .design {
@@ -109,7 +110,6 @@
     .introduction-text {
         width: 90%;
         margin: 10px auto;
-        height: 100%;
     }
 
     .introduction-text:-webkit-scrollbar {

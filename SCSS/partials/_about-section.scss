@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.title-about {
+    width: 100%;
+    margin-bottom: 10px;
+}
 .about-title {
     text-align: center;
     display: contents;
@@ -146,13 +150,13 @@
     width: 75%;
     margin: auto;;
     color: $color-white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
     font-weight: 800;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    p {
-        margin: 15px 21px 21px 21px;
-    }
 }
 
 .introduction-text::-webkit-scrollbar {
