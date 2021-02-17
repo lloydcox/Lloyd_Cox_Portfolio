@@ -3,6 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/cts4gdf79l3z/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp /CSS/* $DEPLOYPATH
-    - /bin/cp /JS/* $DEPLOYPATH
-    - /bin/cp /Imgs/* $DEPLOYPATH
+    - /bin/cp -R CSS $DEPLOYPATH
+    - /bin/cp -R JS $DEPLOYPATH
+    - /bin/cp -R Imgs $DEPLOYPATH
