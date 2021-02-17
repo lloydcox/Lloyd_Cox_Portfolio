@@ -1956,6 +1956,11 @@ header {
     width: 94.5%;
   }
 }
+@media screen and (min-width: 1400px) {
+  .sun {
+    left: 33.5%;
+  }
+}
 @media screen and (min-width: 990px) {
   h1 {
     font-size: 5em;
