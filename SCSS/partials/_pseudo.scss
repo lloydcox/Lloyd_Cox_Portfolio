@@ -32,6 +32,43 @@
     border: $color-dark-blue 3px solid;
 }
 
+.contact-section:hover {
+  background-color: $color-gray;
+  border: 3px solid $color-white;
+}
+
+.work-s:hover, .personal:hover, .intro:hover, .introduction-text:hover,
+.about-me-heading:hover {
+  border: 3px solid $color-white;
+  color: $color-white;
+  background-color: $color-gray;
+  span{
+    p {
+      color: $color-white;
+    }
+  }
+}
+
+// .abouttt:hover{
+//   h2 {
+//     width: 20%;
+//     border-radius: 25px;
+//     border: 3px solid $color-white;
+//     color: $color-white;
+//     background-color: $color-gray;
+//   }
+// }
+
+// .attributes-section:hover, .experience-section:hover {
+//   h2 {
+//     width: 30%;
+//     border-radius: 25px;
+//     border: 3px solid $color-white;
+//     color: $color-white;
+//     background-color: $color-gray;
+//   }
+// }
+
 
 // flip cards 
 
@@ -567,7 +604,7 @@
     transform: rotateY(180deg);
     justify-content: center;
     p {
-      width: 75%;
+      width: 80%;
       margin: auto;
     }
   }
@@ -590,7 +627,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%; 
     }
   }
 
@@ -604,7 +641,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%;
     }
   }
 
@@ -618,7 +655,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%; 
     }
   }
 
@@ -636,7 +673,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%;
     }
   }
 
@@ -650,7 +687,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%;
     }
   }
 
@@ -664,7 +701,7 @@
     p {
         // margin-top: 20px;
         margin: auto;
-        width: 75%;
+        width: 90%; 
     }
   }
 
@@ -778,10 +815,10 @@
     width: 90%;
     position: absolute;
     transform: translateY(0);
-    transition: 15s;
+    transition: 15s linear;
   }
   .textBox:hover span {
-    transform: translateY(calc(350px - 100%));
+    transform: translateY(calc(250px - 100%));
   }
 
   .textBox2 {
@@ -803,81 +840,3 @@
   .textBox2:hover span {
     transform: translateY(calc(140px - 100%));
   }
-
-
-
-// .off {
-//   -webkit-transition: all 2s; /* Safari */
-//   transition: all 2s;
-// }
-
-// .flips {
-//   -webkit-perspective: 900px;
-//   -moz-perspective: 900px;
-//   perspective: 900px;
-//   width: 80%;
-//   height: 20%;
-//   position: absolute;
-//   -webkit-transition: all 1s; /* Safari */
-//   transition: all 1s;
-//   margin-left: 10%;
-//   margin-right: 10%;
-//  }
- 
-// .flips .flip.flipped {
-//   -webkit-transform: rotatex(-180deg);
-//   -moz-transform: rotatex(-180deg);
-//   transform: rotatex(-180deg);
-//   height: 100%;
-//   z-index: 100;
-// }
-
-// .flips .flip {
-//   width: 100%;
-//   height: 100%;
-//   -webkit-transform-style: preserve-3d;
-//   -moz-transform-style: preserve-3d;
-//   transform-style: preserve-3d;
-//   -webkit-transition: all 1s; /* Safari */
-//   transition: all 1s;
-// }
-
-// .flips .flip .face {
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   -webkit-backface-visibility: hidden ;
-//   -moz-backface-visibility: hidden ;
-//   backface-visibility: hidden ;
-//   z-index: 2;
-//   font-size: 2em;
-//   font-family: arial, sans-serif;
-//   text-align: center;
-//   -webkit-transition: all 0.5s; /* Safari */
-//   transition: all 0.5s;
-// }
-
-// .flips .flip .front {
-//   position: absolute;
-//   z-index: 1;
-// }
-
-// .flips .flip .back {
-//   -webkit-transform: rotatex(-180deg);
-//   -moz-transform: rotatex(-180deg);
-//   transform: rotatex(-180deg);
-// }
-
-// .flips .flip .front,
-// .flips .flip .back{
-//   cursor: pointer;
-// }
-
-// .big {
-// height:100%;
-// width:100%;
-// top: 0% !important;
-// margin-left: 0%;
-// margin-right: 0%;
-// z-index:100;
-// }
