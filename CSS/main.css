@@ -520,6 +520,8 @@ img {
   flex-direction: column;
   height: 150px;
   cursor: pointer;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .about-me-heading::-webkit-scrollbar {
@@ -623,6 +625,8 @@ img {
   border-radius: 25px;
   border-radius: 25px;
   overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .details {
@@ -844,18 +848,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.yellow-blue:hover {
-  background-color: #E2FC81;
-  color: #4543DA;
-  border: #4543DA 3px solid;
-}
-
-.blue-yellow:hover {
-  background-color: #4543DA;
-  color: #E2FC81;
-  border: #E2FC81 3px solid;
 }
 
 .fb:hover, .tw:hover, .li:hover {
@@ -1143,6 +1135,8 @@ header {
   align-items: center;
   border-radius: 25px;
   overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-1s, .flip-card-back-1s {
@@ -1204,6 +1198,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-3, .flip-card-back-3 {
@@ -1234,6 +1230,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-4, .flip-card-back-4 {
@@ -1264,18 +1262,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
-}
-
-.ring {
-  width: 150%;
-  height: 150%;
-  border: solid 10px red;
-  border-radius: 50%;
-  top: -25%;
-  left: -25%;
-  position: absolute;
-  transform: rotate3d(0.8, 0.2, 0, 75deg);
-  box-sizing: border-box;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-5, .flip-card-back-5 {
@@ -1326,6 +1314,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-7, .flip-card-back-7 {
@@ -1357,6 +1347,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-8, .flip-card-back-8 {
@@ -1388,6 +1380,8 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .flip-card-front-9, .flip-card-back-9 {
@@ -2188,11 +2182,15 @@ header {
     width: 73%;
     height: 70%;
     overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
   }
 
   .card-s {
     height: 400px;
     overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
   }
 
   .video-height-s {
@@ -2362,6 +2360,8 @@ header {
 
   .card {
     height: 500px;
+    scrollbar-width: none;
+    /* Firefox */
   }
 
   .projects {

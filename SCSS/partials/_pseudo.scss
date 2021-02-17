@@ -1,24 +1,4 @@
 
-// .title-container:hover {
-//     border: $color-white 3px solid;
-// }
-
-
-// .footer-container:hover {
-//     border: $color-white 3px solid;
-// }
-
-.yellow-blue:hover {
-    background-color: $color-yellow;
-    color: $color-dark-blue;
-    border: $color-dark-blue 3px solid;
-}
-
-.blue-yellow:hover {
-    background-color: $color-dark-blue;
-    color: $color-yellow;
-    border: $color-yellow 3px solid;
-}
 
 .fb:hover, .tw:hover, .li:hover {
     border: $color-dark-blue 3px solid;
@@ -48,27 +28,6 @@
     }
   }
 }
-
-// .abouttt:hover{
-//   h2 {
-//     width: 20%;
-//     border-radius: 25px;
-//     border: 3px solid $color-white;
-//     color: $color-white;
-//     background-color: $color-gray;
-//   }
-// }
-
-// .attributes-section:hover, .experience-section:hover {
-//   h2 {
-//     width: 30%;
-//     border-radius: 25px;
-//     border: 3px solid $color-white;
-//     color: $color-white;
-//     background-color: $color-gray;
-//   }
-// }
-
 
 // flip cards 
 
@@ -307,6 +266,7 @@
     align-items: center;   
     border-radius: 25px; 
     overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-1s, .flip-card-back-1s {
@@ -364,6 +324,7 @@
     display: flex;
     align-items: center;    
     border-radius:  25px;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-3, .flip-card-back-3 {
@@ -392,6 +353,7 @@
     display: flex;
     align-items: center;
     border-radius:  25px;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-4, .flip-card-back-4 {
@@ -420,18 +382,7 @@
     display: flex;
     align-items: center;
     border-radius:  25px;
-  }
-
-  .ring {
-    width: 150%;
-    height: 150%;
-    border: solid 10px red;
-    border-radius: 50%;
-    top: -25%; 
-    left: -25%; 
-    position: absolute;
-    transform: rotate3d(0.8, 0.2, 0, 75deg); 
-    box-sizing: border-box;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-5, .flip-card-back-5 {
@@ -480,6 +431,7 @@
     display: flex;
     align-items: center;
     border-radius:  25px;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-7, .flip-card-back-7 {
@@ -509,6 +461,7 @@
     display: flex;
     align-items: center;
     border-radius:  25px;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-8, .flip-card-back-8 {
@@ -538,6 +491,7 @@
     display: flex;
     align-items: center;
     border-radius:  25px;
+    scrollbar-width: none;  /* Firefox */
   }
 
   .flip-card-front-9, .flip-card-back-9 {

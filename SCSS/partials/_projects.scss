@@ -25,6 +25,7 @@
     border-radius: 25px;
     border-radius: 25px;
     overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
 }
 
 .details {

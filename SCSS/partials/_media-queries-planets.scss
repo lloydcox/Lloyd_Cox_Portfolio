@@ -232,11 +232,13 @@
     width: 73%;
     height: 70%;
     overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
     }
 
     .card-s {
     height: 400px;
     overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
     }
 
     .video-height-s {
@@ -408,6 +410,7 @@
 
     .card {
         height: 500px;
+        scrollbar-width: none;  /* Firefox */
     }
 
     .projects {
