@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/Lloyd_Cox_Portfolio/public_html/
+    - export DEPLOYPATH=/home/cts4gdf79l3z/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
