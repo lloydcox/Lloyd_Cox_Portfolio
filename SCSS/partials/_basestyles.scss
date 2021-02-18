@@ -309,8 +309,9 @@ img {
 .sun {
   position: fixed;
   display: flex;
-	top: 10%;
-	left:-72%;
+	top: 50%;
+	left:50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   height: 900px;
   width: 900px;

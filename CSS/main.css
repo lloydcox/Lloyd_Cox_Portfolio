@@ -405,8 +405,9 @@ img {
 .sun {
   position: fixed;
   display: flex;
-  top: 10%;
-  left: -72%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   height: 900px;
   width: 900px;
@@ -671,8 +672,6 @@ header {
   align-items: center;
   z-index: 10;
   width: 100%;
-  height: 100px;
-  margin-top: 30px;
 }
 
 .title-container {
@@ -1695,8 +1694,6 @@ header {
   }
 
   .sun {
-    top: 10%;
-    left: -30%;
     height: 800px;
     width: 800px;
   }
@@ -1724,8 +1721,6 @@ header {
   }
 
   .sun {
-    top: 10%;
-    left: 5%;
     height: 700px;
     width: 700px;
   }
@@ -1812,8 +1807,6 @@ header {
   }
 
   .sun {
-    top: 10%;
-    left: 20%;
     height: 600px;
     width: 600px;
   }
@@ -1913,8 +1906,6 @@ header {
   }
 
   .sun {
-    top: 10%;
-    left: 30%;
     height: 500px;
     width: 500px;
   }
@@ -1949,11 +1940,6 @@ header {
 
   .footer-container {
     width: 94.5%;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .sun {
-    left: 33.5%;
   }
 }
 @media screen and (min-width: 990px) {
